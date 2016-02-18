@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\KinectView\Scripts\msaw\stereo\Stereovision.cs">
+    <Files>
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\Example.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\FaceTextureAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\FaceSourceView.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\MonitorState.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FaceSourceManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\shadertests\NewSurfaceShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\shadertests\NewSurfaceShader 1.shader" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\shadertests\NewSurfaceShader 2.shader" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\shadertests\SetRenderQueue.cs" Line="1" Column="1" />
+      <File FileName="Assets\stereoCamSetting.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\Stereovision.cs" Line="68" Column="45" />
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\StereovisionMasked.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\OffsetCameraMatrix.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\anaglyphMatAndMasking.shader" Line="17" Column="13" />
+      <File FileName="Assets\KinectView\Scripts\msaw\MonitorBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\FaceMultiSourceManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\ClipShader.shader" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
