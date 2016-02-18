@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\KinectView\Scripts\msaw\MonitorBehavior.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\KinectView\Scripts\msaw\FaceSourceView.cs">
     <Files>
-      <File FileName="Assets\KinectView\Scripts\msaw\MonitorBehavior.cs" Line="11" Column="41" />
+      <File FileName="Assets\KinectView\Scripts\msaw\FaceMultiSourceManager.cs" Line="149" Column="37" />
+      <File FileName="Assets\KinectView\Scripts\msaw\FaceSourceView.cs" Line="88" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

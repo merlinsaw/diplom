@@ -37,7 +37,9 @@ public class FaceSourceView : NetworkBehaviour
 	
 	private Dictionary<ulong, GameObject> _Bodies = new Dictionary<ulong, GameObject>();
 	
-	
+	/// <summary>
+	/// The bone map.
+	/// </summary>
 	private Dictionary<Kinect.JointType, Kinect.JointType> _BoneMap = new Dictionary<Kinect.JointType, Kinect.JointType>()
 	{
 		{ Kinect.JointType.FootLeft, Kinect.JointType.AnkleLeft },
@@ -79,7 +81,7 @@ public class FaceSourceView : NetworkBehaviour
     }
 
 	void CreateMonitors(){
-		print(Rig.transform.childCount);
+		Debug.Log(Rig.transform.childCount);
 		for (int slot = 0; slot < Rig.transform.childCount; slot++){
 			_Monitor = (GameObject)Instantiate(_MonitorSource, new Vector3(0, 0, 0), Quaternion.identity);
 			_Monitor.transform.parent = Rig.transform.GetChild(slot).transform;
@@ -205,18 +207,24 @@ public class FaceSourceView : NetworkBehaviour
 		print ("setting Showcase");
 		_Monitor.transform.rotation = Rig.transform.GetChild(RigSlot).transform.rotation;
 		_MonitorState._Behavior = MonitorState.AI.Showcase;
-		// select a new random monitor 
-		// childCount-2 is set because the index starts at 0 and
-		// to enshure that the last index won't be picked to permanently change 
-		// the searching direction PickEmptyMonitorBackwards inside of PickEmptyMonitor()
-		// random range begins at 1 because 0 will be started with anyways 
-		// and it will break out of the serching in PickEmptyMonitor() when 0 is reached in backwards search direction
+		/// <summary>
+		/// select a new random monitor 
+		/// childCount-2 is set because the index starts at 0 and
+		/// to enshure that the last index won't be picked to permanently change 
+		/// the searching direction PickEmptyMonitorBackwards inside of PickEmptyMonitor()
+		/// random range begins at 1 because 0 will be started with anyways 
+		/// and it will break out of the serching in PickEmptyMonitor() when 0 is reached in backwards search direction
+		/// </summary>
 		RigSlot = Random.Range(1,Rig.transform.childCount-2);
 		PickEmptyMonitor();
 		PickEmptyMonitorBackwards = false;
-		// set the starting point of the awakening animation path to new Rig slot position
+		/// <summary>
+		/// set the starting point of the awakening animation path to new Rig slot position
+		/// </summary>
 		iTweenPath.ChangePath("Path_1",0,Rig.transform.GetChild(RigSlot).transform.position);
-		//destroy the body by restarting the sensor
+		/// <summary>
+		/// destroy the body by restarting the sensor
+		/// </summary>
 		_MultiManager.RestartSensor();
 	}
 
@@ -360,12 +368,15 @@ public class FaceSourceView : NetworkBehaviour
 			ColorSpacePoint ColorSpaceHead = 
 				KinectSensor.GetDefault().CoordinateMapper.MapCameraPointToColorSpace(headJoint.Position);
 
-			// get the depth image coordinates for the head
+			/// <summary>
+			/// get the depth image coordinates for the head
+			/// </summary>
 			DepthSpacePoint depthPoint = 
 				KinectSensor.GetDefault().CoordinateMapper.MapCameraPointToDepthSpace(headJoint.Position);
 
-			// use the x & y coordinates to locate the depth data
-
+			/// <summary>
+			/// use the x & y coordinates to locate the depth data
+			/// </summary> 
 			FrameDescription depthDesc = KinectSensor.GetDefault().DepthFrameSource.FrameDescription;
 
 			int depthX = (int)Mathf.Floor(depthPoint.X + 0.5F);
@@ -374,12 +385,13 @@ public class FaceSourceView : NetworkBehaviour
 		
 			//ushort depth = _depthData[depthIndex];
 
-			//SET FACE IS COUSING AN ERROR SOMETIMES 
-			/* 
-			 * IndexOutOfRangeException: Array index is out of range.
-			 * FaceSourceView.SetFace (Windows.Kinect.Body body, UnityEngine.GameObject bodyObject) (at Assets/KinectView/Scripts/msaw/FaceSourceView.cs:201)
-			 * FaceSourceView.Update () (at Assets/KinectView/Scripts/msaw/FaceSourceView.cs:143)
-			 */
+			/// <remarks>
+			/// SET FACE IS COUSING AN ERROR SOMETIMES 
+			///  
+			/// IndexOutOfRangeException: Array index is out of range.
+			/// FaceSourceView.SetFace (Windows.Kinect.Body body, UnityEngine.GameObject bodyObject) (at Assets/KinectView/Scripts/msaw/FaceSourceView.cs:201)
+			/// FaceSourceView.Update () (at Assets/KinectView/Scripts/msaw/FaceSourceView.cs:143)
+			/// </remarks>
 			ushort depth = _MultiManager.GetDepthData()[depthIndex];
 
 			int imageSize = (int)(FaceFrameSize / CalculatePixelWidth(depthDesc, depth));
@@ -391,22 +403,25 @@ public class FaceSourceView : NetworkBehaviour
 
 			if (x  >= 0 && y >= 0 && imageSize > 0 && x <= _MultiManager.ColorWidth -(imageSize / 2) && y <= _MultiManager.ColorHeight -(imageSize / 2)) {
 				Texture2D source = _MultiManager.GetColorTexture();
-				// ERROR
-				/* 	Texture rectangle is out of bounds (867 + 263 > 1080)
-				 *	UnityEngine.Texture2D:GetPixels(Int32, Int32, Int32, Int32)
-				 *	FaceSourceView:SetFace(Body, GameObject) (at Assets/KinectView/Scripts/msaw/FaceSourceView.cs:224)
-				 *	FaceSourceView:Update() (at Assets/KinectView/Scripts/msaw/FaceSourceView.cs:145)
-				 *
-				 * tried to fix it with better if condition but did not help
-				 * && x <= _MultiManager.ColorWidth -(imageSize / 2) && y <= _MultiManager.ColorHeight -(imageSize / 2)
-				 */
+				/// <remarks>
+				/// ERROR
+				/// 	Texture rectangle is out of bounds (867 + 263 > 1080)
+				/// 	UnityEngine.Texture2D:GetPixels(Int32, Int32, Int32, Int32)
+				/// 	FaceSourceView:SetFace(Body, GameObject) (at Assets/KinectView/Scripts/msaw/FaceSourceView.cs:224)
+				/// 	FaceSourceView:Update() (at Assets/KinectView/Scripts/msaw/FaceSourceView.cs:145)
+				/// 
+				/// tried to fix it with better if condition but did not help
+				/// && x <= _MultiManager.ColorWidth -(imageSize / 2) && y <= _MultiManager.ColorHeight -(imageSize / 2)
+				/// </remarks>
 				Color[] pix = source.GetPixels(x, y, imageSize, imageSize);
 				Texture2D destTex = new Texture2D(imageSize, imageSize);
 				destTex.SetPixels(pix);
 				destTex.Apply ();
 				//gameObject.GetComponent<Renderer>().material.mainTexture = destTex;
 
-				// saving the destTex tecture single frame to disk
+				/// <summary>
+				/// saving the destTex texture single frame to disk
+				/// </summary>
 				if (FaceImageNumber <= MaximumFaceImages){
 					if (_MonitorState._Display == MonitorState.Show.Nothing){
 						SaveTextureToFile(destTex, FaceImageNumber);
@@ -422,9 +437,11 @@ public class FaceSourceView : NetworkBehaviour
 		}
 	}
 
-
-	
-	//void SaveTextureToFile( Texture2D texture ,string fileName)
+	/// <summary>
+	/// Saves the texture to file.
+	/// </summary>
+	/// <param name="texture">Texture.</param>
+	/// <param name="imageNumber">Image number.</param>
 	void SaveTextureToFile( Texture2D texture ,int imageNumber)
 	{
 		// to store image
@@ -436,14 +453,22 @@ public class FaceSourceView : NetworkBehaviour
 		//print(path);
 		}
 
-
+	/// <summary>
+	/// Calculates the width of the Depth Frame pixels.
+	/// </summary>
+	/// <remarks>
+	/// not shure if its color pixels or depth!!!!!!!
+	/// </remarks>
+	/// <returns>The pixel width.</returns>
+	/// <param name="description">Description.</param>
+	/// <param name="depth">Depth.</param>
 	private double CalculatePixelWidth(FrameDescription description, ushort depth)
 	{
 		// measure the size of the pixel
 		float hFov = description.HorizontalFieldOfView / 2;
 		float numPixels = description.Width / 2;
 		
-		/* soh-cah-TOA
+	/* soh-cah-TOA
      * 
      * TOA = tan(0) = O / A
      *   T = tan( (horizontal FOV / 2) in radians )
@@ -458,7 +483,11 @@ public class FaceSourceView : NetworkBehaviour
 		
 		return pixelWidth / numPixels;
 	}
-
+	/// <summary>
+	/// Creates the body object.
+	/// </summary>
+	/// <returns>The body object.</returns>
+	/// <param name="id">Identifier.</param>
 	private GameObject CreateBodyObject(ulong id)
 	{
 		GameObject body = new GameObject("Body:" + id);
@@ -482,7 +511,12 @@ public class FaceSourceView : NetworkBehaviour
 		return body;
 	}
 	
-	
+	/// <summary>
+	/// Refreshs the body object.
+	/// And dose the line rendering of Joints.
+	/// </summary>
+	/// <param name="body">Body.</param>
+	/// <param name="bodyObject">Body object.</param>
 	private void RefreshBodyObject(Kinect.Body body, GameObject bodyObject)
 	{
 		for (Kinect.JointType jt = Kinect.JointType.SpineBase; jt <= Kinect.JointType.ThumbRight; jt++)
@@ -511,7 +545,11 @@ public class FaceSourceView : NetworkBehaviour
 			}
 		}
 	}
-	// bone color
+	/// <summary>
+	/// Gets the state of the Bone color.
+	/// </summary>
+	/// <returns>The color for state.</returns>
+	/// <param name="state">State.</param>
 	private static Color GetColorForState(Kinect.TrackingState state)
 	{
 		switch (state)
@@ -526,7 +564,11 @@ public class FaceSourceView : NetworkBehaviour
 			return Color.black;
 		}
 	}
-	// bone positions
+	/// <summary>
+	/// Gets the vector3 from joint.
+	/// </summary>
+	/// <returns>The vector3 from joint.</returns>
+	/// <param name="joint">Joint.</param>
 	private static Vector3 GetVector3FromJoint(Kinect.Joint joint)
 	{
 		return new Vector3(joint.Position.X * 25 , joint.Position.Y * 25, joint.Position.Z *25 -50);
