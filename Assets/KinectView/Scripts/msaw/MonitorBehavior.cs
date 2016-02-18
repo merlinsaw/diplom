@@ -8,7 +8,7 @@ public class MonitorBehavior : MonoBehaviour {
 	
 	}
 	
-	// Update is called once per frame test
+	// Update is called once per frame
 	void Update () {
 	
 	}
