@@ -39,6 +39,10 @@
 				{
 					Combine texture * previous, texture
 				}
+				SetTexture [_RightMask]
+				{
+					Combine texture * previous, texture
+				}
 			}
 		           
 			Pass 
@@ -55,6 +59,10 @@
 					Combine texture * primary, texture + primary
 				} 
 				SetTexture [_RightMask]
+				{
+					Combine texture * previous, texture
+				}
+				SetTexture [_LeftMask]
 				{
 					Combine texture * previous, texture
 				}
