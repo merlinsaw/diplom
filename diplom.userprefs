@@ -1,18 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\KinectView\Scripts\msaw\stereo\anaglyphMat.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\KinectView\Scripts\msaw\FaceSourceView.cs">
     <Files>
       <File FileName="Assets\KinectView\Scripts\msaw\stereo\ClipShader.shader" Line="1" Column="1" />
       <File FileName="Assets\KinectView\Scripts\msaw\stereo\StereovisionMasked.cs" Line="1" Column="1" />
       <File FileName="Assets\KinectView\Scripts\msaw\stereo\Stereovision.cs" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\FaceSourceView.cs" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\FaceSourceView.cs" Line="443" Column="30" />
       <File FileName="Assets\KinectView\Scripts\msaw\FaceTextureAnimation.cs" Line="1" Column="1" />
       <File FileName="Assets\KinectView\Scripts\msaw\stereo\QuadMapping.cs" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\ClipShaderMask.shader" Line="14" Column="15" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\ClipShader_BlacKnWhite.shader" Line="1" Column="37" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\BlacKnWhite.shader" Line="47" Column="59" />
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\ClipShaderMask.shader" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\ClipShader_BlacKnWhite.shader" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\BlacKnWhite.shader" Line="1" Column="1" />
       <File FileName="Assets\KinectView\Scripts\msaw\stereo\anaglyphMat.shader" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\anaglyphMatAndMasking.shader" Line="44" Column="9" />
+      <File FileName="Assets\KinectView\Scripts\msaw\stereo\anaglyphMatAndMasking.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

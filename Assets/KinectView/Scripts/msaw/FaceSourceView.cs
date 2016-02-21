@@ -28,6 +28,8 @@ public class FaceSourceView : NetworkBehaviour
 	private Vector3 TargetPosition;
 	private GameObject[] _MonitorList;// = new GameObject[144];
 
+	private ulong TrackedBody;
+
 	public GameObject Rig;
 //del	private int RigSlot_X = 0;
 //del	private int ReigSlot_Y = 0;
@@ -133,14 +135,14 @@ public class FaceSourceView : NetworkBehaviour
 		//
 
 		//begin body
-		Kinect.Body[] data = _MultiManager.GetBodyData ();
-		if (data == null)
+		Kinect.Body[] BodydataArray = _MultiManager.GetBodyData ();
+		if (BodydataArray == null)
 		{
 			return;
 		}
 		
 		List<ulong> trackedIds = new List<ulong>();
-		foreach(var body in data)
+		foreach(var body in BodydataArray)
 		{
 			if (body == null)
 			{
@@ -149,7 +151,12 @@ public class FaceSourceView : NetworkBehaviour
 			
 			if(body.IsTracked)
 			{
-				trackedIds.Add (body.TrackingId);
+				trackedIds.Add (body.TrackingId);// msaw edit the next lines
+				//if (TrackedBody == 0){
+				//	TrackedBody = body.TrackingId;
+					//Debug.LogError(body.TrackingId);
+				//}
+				//msaw end
 			}
 		}
 		
@@ -158,14 +165,15 @@ public class FaceSourceView : NetworkBehaviour
 		// First delete untracked bodies
 		foreach(ulong trackingId in knownIds)
 		{
-			if(!trackedIds.Contains(trackingId))
+			if(!trackedIds.Contains(trackingId))// msaw edit the next lines
+			//if(TrackedBody != trackingId)
+				//msaw end
 			{
 				Destroy(_Bodies[trackingId]);
 				_Bodies.Remove(trackingId);
 			}
-		}
-
-		foreach(var body in data)
+		} 
+		foreach(var body in BodydataArray)
 		{
 			if (body == null)
 			{
@@ -174,17 +182,27 @@ public class FaceSourceView : NetworkBehaviour
 			
 			if(body.IsTracked)
 			{
-				if(!_Bodies.ContainsKey(body.TrackingId))
+				if(!_Bodies.ContainsKey(body.TrackingId)) // msaw edit the next lines
+				//if(!_Bodies.ContainsKey(TrackedBody))
+				//msaw end
 				{
-					_Bodies[body.TrackingId] = CreateBodyObject(body.TrackingId);
+					_Bodies[body.TrackingId] = CreateBodyObject(body.TrackingId); //msaw edit the next lines
+					//_Bodies[TrackedBody] = CreateBodyObject(TrackedBody);
+					// msaw end
 					_MonitorState._Behavior = MonitorState.AI.Awake;
 					print ("got tracking so awakening....");
 				}
 				
-				RefreshBodyObject(body, _Bodies[body.TrackingId]);
+				 RefreshBodyObject(body, _Bodies[body.TrackingId]); //msaw edit the next lines
+				//RefreshBodyObject(body, _Bodies[TrackedBody]);
+				//msaw end
 				//SET FACE IS CAUSING AN ERROR SOMETIMES
-				SetFace(body, _Bodies[body.TrackingId]); 
+
+				SetFace(body, _Bodies[body.TrackingId]); // msaw edit the next lines
+				//SetFace(body, _Bodies[TrackedBody]);
+				// msaw end
 				SetMovingTarget(body);
+				//break; // not shure if break helps to only get one body
 			}
 		}
 		//end body
@@ -226,6 +244,7 @@ public class FaceSourceView : NetworkBehaviour
 		/// <summary>
 		/// destroy the body by restarting the sensor
 		/// </summary>
+		TrackedBody = 0; //msaw test
 		_MultiManager.RestartSensor();
 	}
 
@@ -358,22 +377,28 @@ public class FaceSourceView : NetworkBehaviour
 	public Vector3 GetMovingTarget(){
 		return TargetPosition;
 	}
-	// this function alignes the depth and color data
-	// tracks the head joint
-	// and cuts out a texture scaled by the distance of the person,
-	// so it will only contain the head
-	// than it saves the files to disk
-	// and sets the loading state for the monitor
-
+	/// <summary>
+	/// this function alignes the depth and color data
+	/// tracks the head joint
+	/// and cuts out a texture scaled by the distance of the person,
+	/// so it will only contain the head
+	/// than it saves the files to disk
+	/// and sets the loading state for the monitor
+	/// </summary>
+	/// <param name="body">Body.</param>
+	/// <param name="bodyObject">Body object.</param>
 	public void SetFace(Kinect.Body body, GameObject bodyObject){
 		Kinect.Joint headJoint = body.Joints[Kinect.JointType.Head];
 		if (headJoint.TrackingState == TrackingState.Tracked)
 		{
+			/// <summary>
+			/// get the color image coordinates for the head joint
+			/// </summary>
 			ColorSpacePoint ColorSpaceHead = 
 				KinectSensor.GetDefault().CoordinateMapper.MapCameraPointToColorSpace(headJoint.Position);
 
 			/// <summary>
-			/// get the depth image coordinates for the head
+			/// get the depth image coordinates for the head joint
 			/// </summary>
 			DepthSpacePoint depthPoint = 
 				KinectSensor.GetDefault().CoordinateMapper.MapCameraPointToDepthSpace(headJoint.Position);
@@ -405,8 +430,8 @@ public class FaceSourceView : NetworkBehaviour
 //			_width = (float)imageSize;
 //			_height = (float)imageSize;
 
-			if (x  > 0 && y > 0 && imageSize > 0 && x < _MultiManager.ColorWidth -(imageSize / 2) && y < _MultiManager.ColorHeight -(imageSize / 2)) {
-				Texture2D source = _MultiManager.GetColorTexture();
+			if (x  > 0 && y > 0 && imageSize > 0 && x < _MultiManager.ColorWidth - imageSize && y < _MultiManager.ColorHeight - imageSize) {
+				Texture2D colorSource = _MultiManager.GetColorTexture();
 				/// <remarks>
 				/// ERROR
 				/// 	Texture rectangle is out of bounds (867 + 263 > 1080)
@@ -416,8 +441,14 @@ public class FaceSourceView : NetworkBehaviour
 				/// 
 				/// tried to fix it with better if condition but did not help
 				/// && x <= _MultiManager.ColorWidth -(imageSize / 2) && y <= _MultiManager.ColorHeight -(imageSize / 2)
+				/// 
+				/// Texture rectangle is out of bounds (1859 + 72 > 1920)
+				/// tried to fix it now by removing the division on the imageSize 
+				/// from -(imageSize / 2) to -(imageSize)
 				/// </remarks>
-				Color[] pix = source.GetPixels(x, y, imageSize, imageSize);
+				/// 1920x1080 color frame
+				/// 512x424 depth and infrared
+				Color[] pix = colorSource.GetPixels(x, y, imageSize, imageSize);
 				Texture2D destTex = new Texture2D(imageSize, imageSize);
 				destTex.SetPixels(pix);
 				destTex.Apply ();
