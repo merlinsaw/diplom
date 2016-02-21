@@ -1,4 +1,9 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Camera for the server
+/// </summary>
+
+
+using UnityEngine;
 using System.Collections;
 //using System.Object;
 //[ExecuteInEditMode]
@@ -74,9 +79,9 @@ public class Stereovision : MonoBehaviour {
 		rightEye.transform.parent = transform;
 
 
-		camera.cullingMask = 0; 
-		camera.backgroundColor = new Color (0,0,0,0);
-		camera.clearFlags = CameraClearFlags.Nothing;
+		//camera.cullingMask = 0; 
+		//camera.backgroundColor = new Color (0,0,0,0);
+		//camera.clearFlags = CameraClearFlags.Nothing;
 	
 	}
 
@@ -157,48 +162,64 @@ public class Stereovision : MonoBehaviour {
 		GL.End(); 
 	} 
 	// the Quad_2 can be manipulated via the gui
-	public string S_lowerLeft_x = "0.205"; //0.214 //0.0 * # # #
-	public string S_lowerLeft_y = "0.015"; //0.006 //0.0 # * # #
-	public string S_lowerRight_x = "0.745";//0.746 //1.0 # # * #
-	public string S_lowerRight_y = "0.03"; //0.02 //0.0  # # # *
-	public string S_upperLeft_y = "0.97"; // //1.0		 - * - -
-	public string S_upperRight_y = "0.98"; // //1.0		 - - - *
-	float lowerLeft_x;
-	float lowerLeft_y;
-	float upperLeft_x;
-	float upperLeft_y;
-	float lowerRight_x;
-	float lowerRight_y;
-	float upperRight_x;
-	float upperRight_y;
-	void OnGUI(){
-		S_lowerLeft_x = GUI.TextField(new Rect(30, 200, 40, 20), S_lowerLeft_x, 6);
-		S_lowerLeft_y = GUI.TextField(new Rect(70, 200, 40, 20), S_lowerLeft_y, 6);
-		S_lowerRight_x = GUI.TextField(new Rect(120, 200, 40, 20), S_lowerRight_x, 6);
-		S_lowerRight_y = GUI.TextField(new Rect(160, 200, 40, 20), S_lowerRight_y, 6);
-		S_upperLeft_y = GUI.TextField (new Rect(70, 220, 40, 20), S_upperLeft_y , 6);
-		S_upperRight_y = GUI.TextField (new Rect(160, 220, 40, 20), S_upperRight_y , 6);
-		if (S_lowerLeft_x != ""){
-			lowerLeft_x = float.Parse(S_lowerLeft_x);
-			upperLeft_x = lowerLeft_x;
-		}
-		if (S_lowerLeft_y != ""){
-			lowerLeft_y = float.Parse(S_lowerLeft_y);
-		}
-		if (S_lowerRight_x != ""){
-			lowerRight_x = float.Parse(S_lowerRight_x);
-			upperRight_x = lowerRight_x;
-		}
-		if (S_lowerRight_y != ""){
-			lowerRight_y = float.Parse(S_lowerRight_y);
-		}
-		if (S_upperRight_y != ""){
-			upperRight_y = float.Parse(S_upperRight_y);
-		}
-		if (S_upperLeft_y != ""){
-			upperLeft_y = float.Parse(S_upperLeft_y);
-		}
-	}
+//	public string S_lowerLeft_x 	= "0.205"; //0.214 //0.0 * # # #
+//	public string S_lowerLeft_y 	= "0.015"; //0.006 //0.0 # * # #
+//	public string S_lowerRight_x 	= "0.745";//0.746 //1.0 # # * #
+//	public string S_lowerRight_y 	= "0.03"; //0.02 //0.0  # # # *
+//	public string S_upperRight_x 	= "0.98"; // //1.0		 - - - *
+//	public string S_upperRight_y 	= "0.98"; // //1.0		 - - - *
+//	public string S_upperLeft_x 	= "0.205"; // //1.0		 - * - -
+//	public string S_upperLeft_y 	= "0.97"; // //1.0		 - * - -
+
+	public float lowerLeft_x;
+	public float lowerLeft_y;
+	public float lowerRight_x;
+	public float lowerRight_y;
+	public float upperRight_x;
+	public float upperRight_y;
+	public float upperLeft_x;
+	public float upperLeft_y;
+
+//	void OnGUI(){
+//		GUI.Label(new Rect(30, 180, 80, 20), "Lower Left");
+//		S_lowerLeft_x = GUI.TextField(new Rect(30, 200, 40, 20), S_lowerLeft_x, 6);
+//		S_lowerLeft_y = GUI.TextField(new Rect(70, 200, 40, 20), S_lowerLeft_y, 6);
+//		GUI.Label(new Rect(30, 220, 80, 20), "Lower Right");
+//		S_lowerRight_x = GUI.TextField(new Rect(30, 240, 40, 20), S_lowerRight_x, 6);
+//		S_lowerRight_y = GUI.TextField(new Rect(70, 240, 40, 20), S_lowerRight_y, 6);
+//		GUI.Label(new Rect(30, 260, 80, 20), "Upper Right");
+//		S_upperRight_x = GUI.TextField (new Rect(30, 280, 40, 20), S_upperRight_x , 6);
+//		S_upperRight_y = GUI.TextField (new Rect(70, 280, 40, 20), S_upperRight_y , 6);
+//		GUI.Label(new Rect(30, 300, 80, 20), "Upper Left");
+//		S_upperLeft_x = GUI.TextField (new Rect(30, 320, 40, 20), S_upperLeft_x , 6);
+//		S_upperLeft_y = GUI.TextField (new Rect(70, 320, 40, 20), S_upperLeft_y , 6);
+//
+//		if (S_lowerLeft_x != ""){
+//			lowerLeft_x = float.Parse(S_lowerLeft_x);
+//		}
+//		if (S_lowerLeft_y != ""){
+//			lowerLeft_y = float.Parse(S_lowerLeft_y);
+//		}
+//		if (S_lowerRight_x != ""){
+//			lowerRight_x = float.Parse(S_lowerRight_x);
+//		}
+//		if (S_lowerRight_y != ""){
+//			lowerRight_y = float.Parse(S_lowerRight_y);
+//		}
+//		if (S_upperRight_x != ""){
+//			upperRight_x = float.Parse(S_upperRight_x);
+//		}
+//		if (S_upperRight_y != ""){
+//			upperRight_y = float.Parse(S_upperRight_y);
+//		}
+//		if (S_upperLeft_y != ""){
+//			upperLeft_x = float.Parse(S_upperLeft_x);
+//		}
+//		if (S_upperLeft_y != ""){
+//			upperLeft_y = float.Parse(S_upperLeft_y);
+//		}
+//
+//	}
 	//Experimental new Quad for UV mapping tests
 	private void DrawQuad_2() { 
 		GL.Begin (GL.QUADS); 

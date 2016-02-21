@@ -75,7 +75,7 @@ public class FaceSourceView : NetworkBehaviour
 
     void Start ()
     {
-		NetworkServer.Spawn(ClientCam);
+		//NetworkServer.Spawn(ClientCam);
 		_MonitorList = new GameObject[Rig.transform.childCount];
 		CreateMonitors();
     }
@@ -215,7 +215,8 @@ public class FaceSourceView : NetworkBehaviour
 		/// random range begins at 1 because 0 will be started with anyways 
 		/// and it will break out of the serching in PickEmptyMonitor() when 0 is reached in backwards search direction
 		/// </summary>
-		RigSlot = Random.Range(1,Rig.transform.childCount-2);
+		RigSlot += 1; // = Random.Range(1,Rig.transform.childCount-2);
+		if (RigSlot == Rig.transform.childCount){RigSlot=0;}
 		PickEmptyMonitor();
 		PickEmptyMonitorBackwards = false;
 		/// <summary>
@@ -289,7 +290,7 @@ public class FaceSourceView : NetworkBehaviour
 
 		case MonitorState.AI.Engage:
 			Vector3 target = GetMovingTarget ();
-			Vector3 heightAdjustment = new Vector3 (0, 4, 0);
+			Vector3 heightAdjustment = new Vector3 (0, -5, 0);
 			//limit the bounds of tracking the target
 			//Might replace Taht If sentences with Min Max Math sentences 
 			if (target.z > 40.0F){target.z = 40.0F;}
@@ -299,7 +300,7 @@ public class FaceSourceView : NetworkBehaviour
 			//Debug.Log(target);
 			// apply the kinekt depth values to the 3D space drone
 			// but reverse the x direction so it will always go on the opposite side of the shadow
-			Vector3 targetPosition = new Vector3(target.x *-2, target.y + heightAdjustment.y, 200.0F - target.z * 2.5F);
+			Vector3 targetPosition = new Vector3(target.x *2, target.y + heightAdjustment.y, 200.0F - target.z * 2.5F);
 			//Debug.Log(targetPosition);
 			Vector3 monitorCurrentPosition = _Monitor.transform.position;
 			float moveSpeed = 0.05F;
@@ -307,7 +308,7 @@ public class FaceSourceView : NetworkBehaviour
 			// hovering animation			
 			float amplitude = 1F;
 			float speed = 2F;
-			float tempVal = 0F;
+			float tempVal = target.y + heightAdjustment.y;
 			Vector3 tempPos;
 			tempPos.y = tempVal + amplitude * Mathf.Sin(speed * Time.time);
 			_Monitor.transform.position = new Vector3(_Monitor.transform.position.x,tempPos.y,_Monitor.transform.position.z);
@@ -350,7 +351,10 @@ public class FaceSourceView : NetworkBehaviour
 			TargetPosition = GetVector3FromJoint (targetJoint);
 		}
 	}
-
+	/// <summary>
+	/// Gets the moving target (Head joint) for tracking.
+	/// </summary>
+	/// <returns>The moving target.</returns>
 	public Vector3 GetMovingTarget(){
 		return TargetPosition;
 	}
@@ -401,7 +405,7 @@ public class FaceSourceView : NetworkBehaviour
 //			_width = (float)imageSize;
 //			_height = (float)imageSize;
 
-			if (x  >= 0 && y >= 0 && imageSize > 0 && x <= _MultiManager.ColorWidth -(imageSize / 2) && y <= _MultiManager.ColorHeight -(imageSize / 2)) {
+			if (x  > 0 && y > 0 && imageSize > 0 && x < _MultiManager.ColorWidth -(imageSize / 2) && y < _MultiManager.ColorHeight -(imageSize / 2)) {
 				Texture2D source = _MultiManager.GetColorTexture();
 				/// <remarks>
 				/// ERROR

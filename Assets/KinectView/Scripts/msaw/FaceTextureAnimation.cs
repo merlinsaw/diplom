@@ -11,6 +11,9 @@ public class FaceTextureAnimation : NetworkBehaviour {
 	public int MaximumFaceImages = 120;
 	private Texture2D[] FaceFramesArray = new Texture2D[120];
 
+	public GameObject display_front;
+	public GameObject display_back;
+
 	//[SyncVar(hook="doLoadFaceImages")]
 	private MonitorState _MonitorStates;
 
@@ -62,15 +65,18 @@ public class FaceTextureAnimation : NetworkBehaviour {
 			print (imageNumber);
 			var path = System.IO.Path.Combine ("Z:\\Faces\\face ("+RigSlot+")", "image_"+ imageNumber + ".png");
 			var bytesRead = System.IO.File.ReadAllBytes (path);
-			Texture2D myTexture = new Texture2D (32, 32);
+			Texture2D myTexture = new Texture2D (128, 128);
 			myTexture.LoadImage (bytesRead);
 			FaceFramesArray[imageNumber-1] = myTexture;
 			//yield return new WaitForSeconds(.001f);
-			yield return new WaitForSeconds(.111f);
+			yield return new WaitForSeconds(.001f);
 		}
+		if (GetComponent<NetworkIdentity>().isClient)
+		{
 		_MonitorStates._Display = MonitorState.Show.LoadingDone;
 		print ("laoding done");
 		_MonitorStates._Display = MonitorState.Show.FaceAnimation;
+		}
 	}
 
 
@@ -115,7 +121,10 @@ public class FaceTextureAnimation : NetworkBehaviour {
 			int faceFramesIndex = ((int)indexF);// % FaceFramesArray.Length;
 			//print (faceFramesIndex);
 			if (PlayAnimation){
-				gameObject.transform.GetChild(0).GetChild(6).GetComponent<Renderer>().material.mainTexture = FaceFramesArray[faceFramesIndex];
+				display_front.transform.GetComponent<Renderer>().material.mainTexture = FaceFramesArray[faceFramesIndex];
+				display_back.transform.GetComponent<Renderer>().material.mainTexture = FaceFramesArray[faceFramesIndex];
+				//gameObject.transform.GetChild(0).GetChild(6).GetComponent<Renderer>().material.mainTexture = FaceFramesArray[faceFramesIndex];
+				//gameObject.transform.GetChild(1).GetChild(6).GetComponent<Renderer>().material.mainTexture = FaceFramesArray[faceFramesIndex];
 			}
 		}
 	}

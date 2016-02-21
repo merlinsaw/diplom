@@ -1,5 +1,12 @@
+/// <summary>
+/// Camera for the Client
+/// </summary>
+
+
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Networking;
+
 //using System.Object;
 //[ExecuteInEditMode]
 class S3DVM : System.Object
@@ -8,7 +15,7 @@ class S3DVM : System.Object
 	public static float focalDistance;// 	= 6.5F; 
 }
 [ExecuteInEditMode]
-public class StereovisionMasked : MonoBehaviour {
+public class StereovisionMasked : NetworkBehaviour {
 	//public Material anaglyphMat; 
 	public Material anaglyphMatMasked;
 	
@@ -80,18 +87,19 @@ public class StereovisionMasked : MonoBehaviour {
 		
 		leftEye.transform.position = transform.position + transform.TransformDirection(-S3DVM.eyeDistance, 0, 0); 
 		rightEye.transform.position = transform.position + transform.TransformDirection(S3DVM.eyeDistance, 0, 0); 
-		leftEyeMask.transform.position = transform.position + transform.TransformDirection(-S3DVM.eyeDistance, 0, 0); 
-		rightEyeMask.transform.position = transform.position + transform.TransformDirection(S3DVM.eyeDistance, 0, 0); 
+		// currently the eyedistance is set to 0 it could be ment to be the same as the front pair of cameras
+		//leftEyeMask.transform.position = transform.position + transform.TransformDirection(-1.27F, 0, 0); 
+		//rightEyeMask.transform.position = transform.position + transform.TransformDirection(1.27F, 0, 0); 
 		
 		leftEye.transform.parent = transform;
 		rightEye.transform.parent = transform;
-		leftEyeMask.transform.parent = transform;
-		rightEyeMask.transform.parent = transform;
+		//leftEyeMask.transform.parent = transform;
+		//rightEyeMask.transform.parent = transform;
 		
 		
-		camera.cullingMask = 0; 
-		camera.backgroundColor = new Color (0,0,0,0);
-		camera.clearFlags = CameraClearFlags.Nothing;
+		//camera.cullingMask = 0; 
+		//camera.backgroundColor = new Color (0,0,0,0);
+		//camera.clearFlags = CameraClearFlags.Nothing;
 		
 	}
 	
@@ -173,36 +181,66 @@ public class StereovisionMasked : MonoBehaviour {
 		GL.TexCoord2( 0.0F, 1.0F ); GL.Vertex3( 0.0F, 1.0F, zvalue ); 
 		GL.End(); 
 	} 
-	public string S_lowerLeft_x = "0.207"; //0.207 //0.0
-	public string S_lowerLeft_y = "0.0";
-	public string S_lowerRight_x = "0.78";//0.78 //1.0
-	public string S_lowerRight_y = "0.0";
-	float lowerLeft_x;
-	float lowerLeft_y;
-	float upperLeft_x;
-	float lowerRight_x;
-	float lowerRight_y;
-	float upperRight_x;
-	void OnGUI(){
-		S_lowerLeft_x = GUI.TextField(new Rect(30, 200, 40, 20), S_lowerLeft_x, 6);
-		S_lowerLeft_y = GUI.TextField(new Rect(70, 200, 40, 20), S_lowerLeft_y, 6);
-		S_lowerRight_x = GUI.TextField(new Rect(120, 200, 40, 20), S_lowerRight_x, 6);
-		S_lowerRight_y = GUI.TextField(new Rect(160, 200, 40, 20), S_lowerRight_y, 6);
-		if (S_lowerLeft_x != ""){
-			lowerLeft_x = float.Parse(S_lowerLeft_x);
-			upperLeft_x = lowerLeft_x;
-		}
-		if (S_lowerLeft_y != ""){
-			lowerLeft_y = float.Parse(S_lowerLeft_y);
-		}
-		if (S_lowerRight_x != ""){
-			lowerRight_x = float.Parse(S_lowerRight_x);
-			upperRight_x = lowerRight_x;
-		}
-		if (S_lowerRight_y != ""){
-			lowerRight_y = float.Parse(S_lowerRight_y);
-		}
-	}
+	// the Quad_2 can be manipulated via the gui
+	[SyncVar]
+	public float lowerLeft_x;
+	[SyncVar]
+	public float lowerLeft_y;
+	[SyncVar]
+	public float lowerRight_x;
+	[SyncVar]
+	public float lowerRight_y;
+	[SyncVar]
+	public float upperRight_x;
+	[SyncVar]
+	public float upperRight_y;
+	[SyncVar]
+	public float upperLeft_x;
+	[SyncVar]
+	public float upperLeft_y;
+	
+//	void OnGUI(){
+//		GUI.Label(new Rect(30, 180, 80, 20), "Lower Left");
+//		S_lowerLeft_x = GUI.TextField(new Rect(30, 200, 40, 20), S_lowerLeft_x, 6);
+//		S_lowerLeft_y = GUI.TextField(new Rect(70, 200, 40, 20), S_lowerLeft_y, 6);
+//		GUI.Label(new Rect(30, 220, 80, 20), "Lower Right");
+//		S_lowerRight_x = GUI.TextField(new Rect(30, 240, 40, 20), S_lowerRight_x, 6);
+//		S_lowerRight_y = GUI.TextField(new Rect(70, 240, 40, 20), S_lowerRight_y, 6);
+//		GUI.Label(new Rect(30, 260, 80, 20), "Upper Right");
+//		S_upperRight_x = GUI.TextField (new Rect(30, 280, 40, 20), S_upperRight_x , 6);
+//		S_upperRight_y = GUI.TextField (new Rect(70, 280, 40, 20), S_upperRight_y , 6);
+//		GUI.Label(new Rect(30, 300, 80, 20), "Upper Left");
+//		S_upperLeft_x = GUI.TextField (new Rect(30, 320, 40, 20), S_upperLeft_x , 6);
+//		S_upperLeft_y = GUI.TextField (new Rect(70, 320, 40, 20), S_upperLeft_y , 6);
+//		
+//		if (S_lowerLeft_x != ""){
+//			lowerLeft_x = float.Parse(S_lowerLeft_x);
+//			upperLeft_x = lowerLeft_x;
+//		}
+//		if (S_lowerLeft_y != ""){
+//			lowerLeft_y = float.Parse(S_lowerLeft_y);
+//		}
+//		if (S_lowerRight_x != ""){
+//			lowerRight_x = float.Parse(S_lowerRight_x);
+//			upperRight_x = lowerRight_x;
+//		}
+//		if (S_lowerRight_y != ""){
+//			lowerRight_y = float.Parse(S_lowerRight_y);
+//		}
+//		if (S_upperRight_x != ""){
+//			upperRight_x = float.Parse(S_upperRight_x);
+//		}
+//		if (S_upperRight_y != ""){
+//			upperRight_y = float.Parse(S_upperRight_y);
+//		}
+//		if (S_upperLeft_y != ""){
+//			upperLeft_x = float.Parse(S_upperLeft_x);
+//		}
+//		if (S_upperLeft_y != ""){
+//			upperLeft_y = float.Parse(S_upperLeft_y);
+//		}
+//		
+//	}
 	//Experimental new Quad for UV mapping tests
 	private void DrawQuad_2() { 
 		GL.Begin (GL.QUADS); 
@@ -211,9 +249,9 @@ public class StereovisionMasked : MonoBehaviour {
 		//lower right
 		GL.TexCoord2( 1.0F, 0.0F ); GL.Vertex3( lowerRight_x, lowerRight_y, zvalue ); 
 		//upper right
-		GL.TexCoord2( 1.0F, 1.0F ); GL.Vertex3( upperRight_x, 1.0F, zvalue );
+		GL.TexCoord2( 1.0F, 1.0F ); GL.Vertex3( upperRight_x, upperRight_y, zvalue );
 		//upper left
-		GL.TexCoord2( 0.0F, 1.0F ); GL.Vertex3( upperLeft_x, 1.0F, zvalue ); 
+		GL.TexCoord2( 0.0F, 1.0F ); GL.Vertex3( upperLeft_x, upperLeft_y, zvalue ); 
 		GL.End(); 
 	} 
 }
