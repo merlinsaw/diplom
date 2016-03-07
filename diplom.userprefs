@@ -1,18 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\KinectView\Scripts\msaw\FaceSourceView.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\KinectView\Scripts\msaw\BodySource.cs">
     <Files>
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\ClipShader.shader" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\StereovisionMasked.cs" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\Stereovision.cs" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\FaceSourceView.cs" Line="443" Column="30" />
-      <File FileName="Assets\KinectView\Scripts\msaw\FaceTextureAnimation.cs" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\QuadMapping.cs" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\ClipShaderMask.shader" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\ClipShader_BlacKnWhite.shader" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\BlacKnWhite.shader" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\anaglyphMat.shader" Line="1" Column="1" />
-      <File FileName="Assets\KinectView\Scripts\msaw\stereo\anaglyphMatAndMasking.shader" Line="1" Column="1" />
+      <File FileName="Assets\KinectView\Scripts\msaw\FaceSourceView.cs" Line="30" Column="2" />
+      <File FileName="Assets\KinectView\Scripts\msaw\BodySource.cs" Line="205" Column="17" />
+      <File FileName="Assets\KinectView\Scripts\msaw\FaceMultiSourceManager.cs" Line="11" Column="38" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
