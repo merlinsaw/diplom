@@ -20,18 +20,19 @@ public class OffsetCameraMatrix : MonoBehaviour {
 	public float nearPlane = 3.0F;
 	void remote()
 	{
-		if (transform.name == "leftEye") {
+		if (transform.name == "leftEyeBack") {
 			left = transform.parent.GetComponent<StereovisionMasked>().outerOffaxis * -1.0f;
 			right = transform.parent.GetComponent<StereovisionMasked>().innerOffaxis;
 		} 
-		else 
-		{
+		else if (transform.name == "rightEyeBack") {
 			left = transform.parent.GetComponent<StereovisionMasked>().innerOffaxis * -1.0f;
 			right = transform.parent.GetComponent<StereovisionMasked>().outerOffaxis;
 		}
+		if (transform.name == "leftEyeBack" || transform.name == "rightEyeBack"){
 		top = transform.parent.GetComponent<StereovisionMasked>().upperOffaxis;
 		//top = transform.parent.GetComponent<Stereovision> ().innerOffaxis * 1.7f;
 		bottom = transform.parent.GetComponent<StereovisionMasked>().lowerOffaxis *-1.0f;
+		}
 	}
 	
 	void LateUpdate() {

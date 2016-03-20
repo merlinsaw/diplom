@@ -6,6 +6,9 @@ using System.Collections;
 
 public class CubemanController : MonoBehaviour 
 {
+
+	public Vector3 data = Vector3.zero;
+
 	[Tooltip("Index of the player, tracked by this component. 0 means the 1st player, 1 - the 2nd one, 2 - the 3rd one, etc.")]
 	public int playerIndex = 0;
 
@@ -16,8 +19,13 @@ public class CubemanController : MonoBehaviour
 	public bool mirroredMovement = false;
 
 	[Tooltip("Rate at which the cubeman will move through the scene.")]
-	public float moveRate = 1f;
-	
+	public Vector3 moveRate = new Vector3(1f,1f,1f);
+
+
+
+
+
+
 	//public GameObject debugText;
 	
 	public GameObject Hip_Center;
@@ -61,10 +69,16 @@ public class CubemanController : MonoBehaviour
 	private Quaternion initialRotation;
 	private Vector3 initialPosOffset = Vector3.zero;
 	private Int64 initialPosUserID = 0;
-	
-	
+
+	// Initial position and rotation of the transform
+	[Tooltip("Position this transform is offseted by")]
+	public Vector3 offsetNodePos = new Vector3(0,0,3f);
+	protected Quaternion offsetNodeRot;
+
+
 	void Start () 
 	{
+
 		//store bones in a list for easier access
 		bones = new GameObject[] {
 			Hip_Center,
@@ -112,7 +126,7 @@ public class CubemanController : MonoBehaviour
 //			}
 //		}
 
-		initialPosition = transform.position;
+		initialPosition = Vector3.zero;// transform.position;
 		initialRotation = transform.rotation;
 		//transform.rotation = Quaternion.identity;
 	}
@@ -133,7 +147,7 @@ public class CubemanController : MonoBehaviour
 			// reset the pointman position and rotation
 			if(transform.position != initialPosition)
 			{
-				transform.position = initialPosition;
+				transform.position = Vector3.Scale(initialPosition,new Vector3(1f,1f,1f)); //+ offsetNodePos;
 			}
 			
 			if(transform.rotation != initialRotation)
@@ -158,8 +172,9 @@ public class CubemanController : MonoBehaviour
 		}
 		
 		// set the position in space
-		Vector3 posPointMan = manager.GetUserPosition(userID);
-		Vector3 posPointManMP = new Vector3(posPointMan.x, posPointMan.y, !mirroredMovement ? -posPointMan.z : posPointMan.z);
+		Vector3 posPointMan = Vector3.Scale(offsetNodePos-manager.GetUserPosition(userID),new Vector3(2f,1f,3f))+new Vector3(0f,0f,9f);
+		data = posPointMan;
+		Vector3 posPointManMP = new Vector3(posPointMan.x, posPointMan.y, !mirroredMovement ? posPointMan.z  : posPointMan.z );
 		
 		// store the initial position
 		if(initialPosUserID != userID)
@@ -173,7 +188,7 @@ public class CubemanController : MonoBehaviour
 		relPosUser.z =!mirroredMovement ? -relPosUser.z : relPosUser.z;
 
 		transform.position = initialPosOffset + 
-			(verticalMovement ? relPosUser * moveRate : new Vector3(relPosUser.x, 0, relPosUser.z) * moveRate);
+			(verticalMovement ? Vector3.Scale(new Vector3(relPosUser.x,relPosUser.y,-relPosUser.z) , moveRate) : Vector3.Scale(new Vector3(relPosUser.x, 0, relPosUser.z) , moveRate));
 		
 		// update the local positions of the bones
 		for(int i = 0; i < bones.Length; i++) 
@@ -189,20 +204,20 @@ public class CubemanController : MonoBehaviour
 					bones[i].gameObject.SetActive(true);
 					
 					Vector3 posJoint = manager.GetJointPosition(userID, joint);
-					posJoint.z = !mirroredMovement ? -posJoint.z : posJoint.z;
+					posJoint.z = !mirroredMovement ? -posJoint.z  : posJoint.z ;
 					
 					Quaternion rotJoint = manager.GetJointOrientation(userID, joint, !mirroredMovement);
 					rotJoint = initialRotation * rotJoint;
 
-					posJoint -= posPointManMP;
+					posJoint -= posPointManMP; //Vector3.Scale(posPointManMP,new Vector3(1f,1f,3f))+new Vector3(0f,0f,9f);
 					
 					if(mirroredMovement)
 					{
 						posJoint.x = -posJoint.x;
-						posJoint.z = -posJoint.z;
+						posJoint.z = -posJoint.z ;
 					}
 
-					bones[i].transform.localPosition = posJoint;
+					bones[i].transform.localPosition = new Vector3(posJoint.x*2,posJoint.y, (posJoint.z+posPointMan.z/3*2+3f));
 					bones[i].transform.rotation = rotJoint;
 					
 					if(lines[i] == null && skeletonLine != null) 

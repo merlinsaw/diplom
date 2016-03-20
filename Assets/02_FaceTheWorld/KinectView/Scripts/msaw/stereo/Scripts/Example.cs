@@ -19,12 +19,11 @@ public class Example : MonoBehaviour {
 	public float bottom = -0.2F;
 	void remote()
 	{
-		if (transform.name == "leftEye") {
+		if (transform.name == "leftEyeFront") {
 			left = transform.parent.GetComponent<Stereovision>().outerOffaxis * -1.0f;
 			right = transform.parent.GetComponent<Stereovision>().innerOffaxis;
 		} 
-		else 
-		{
+		else if (transform.name == "rightEyeFront") {
 			left = transform.parent.GetComponent<Stereovision>().innerOffaxis * -1.0f;
 			right = transform.parent.GetComponent<Stereovision>().outerOffaxis;
 		}

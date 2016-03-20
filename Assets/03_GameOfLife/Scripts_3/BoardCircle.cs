@@ -8,7 +8,7 @@ public class BoardCircle {
     public CellState[,] Matrix;
 
 	public Vector3 centerPos = new Vector3(0,2,0);    //center of circle/elipsoid
-	public float radiusX = 2.8f,radiusY = 2.5f;                    //radii for each x,y axes, respectively
+	public float radiusX = 3.8f,radiusY = 5.5f;                    //radii for each x,y axes, respectively
 
 	public bool isCircular = false;                  //is the drawn shape a complete circle?
 	public bool vertical = false;                     //is the drawb shape on the xy-plane?
