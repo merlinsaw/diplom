@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 public class BoardCircle {
     public const int SIZE = 20;
-	public const float SCALE = 0.2f;
+	public const float SCALE = 0.5f; // height distance from each other
     public CellState[,] Matrix;
 
-	public Vector3 centerPos = new Vector3(0,2,0);    //center of circle/elipsoid
+	public Vector3 centerPos = new Vector3(0,-1.0f,0);    //center of circle/elipsoid
 	public float radiusX = 3.8f,radiusY = 5.5f;                    //radii for each x,y axes, respectively
 
 	public bool isCircular = false;                  //is the drawn shape a complete circle?
@@ -33,7 +33,8 @@ public class BoardCircle {
 				if(vertical)
 					pointPos = new Vector3(X, Y)+centerPos;
 				else if (!vertical){
-					pointPos = new Vector3(X, y*SCALE- (SIZE / 2)*SCALE, Y)+centerPos;
+					//pointPos = new Vector3(X, y*SCALE- (SIZE / 2)*SCALE, Y)+centerPos;
+					pointPos = new Vector3(X, y*SCALE, Y)+centerPos;
 				}
                 //var position = new Vector3(x - (SIZE / 2), y - (SIZE / 2), 0);
 				//var position = new Vector3(x*SCALE- (SIZE / 2)*SCALE,y*SCALE- (SIZE / 2)*SCALE,0);

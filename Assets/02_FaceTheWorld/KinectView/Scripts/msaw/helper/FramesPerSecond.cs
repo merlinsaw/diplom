@@ -30,7 +30,10 @@ public class FramesPerSecond : MonoBehaviour
 
 	void OnGUI()
 	{
+		if (ShowFPS)
+		{
 		GUI.Label(fpsRect, "FPS: " + string.Format ("{0:0.0}" ,fps),style);
+		}
 	}
 }
 

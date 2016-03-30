@@ -1,0 +1,183 @@
+fileFormatVersion: 2
+guid: 2eef0b70bbbb8b74ab45628e3304f33d
+timeCreated: 1459275297
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: door
+    100002: door_wall
+    100004: sky_1
+    100006: sky_2
+    100008: sky_3
+    100010: sky_4
+    100012: //RootNode
+    100014: stairs10
+    100016: stairs11
+    100018: stairs12
+    100020: stairs13
+    100022: stairs14
+    100024: stairs15
+    100026: stairs16
+    100028: stairs17
+    100030: stairs18
+    100032: stairs19
+    100034: stairs20
+    100036: stairs5
+    100038: stairs6
+    100040: stairs7
+    100042: stairs8
+    100044: stairs9
+    400000: door
+    400002: door_wall
+    400004: sky_1
+    400006: sky_2
+    400008: sky_3
+    400010: sky_4
+    400012: //RootNode
+    400014: stairs10
+    400016: stairs11
+    400018: stairs12
+    400020: stairs13
+    400022: stairs14
+    400024: stairs15
+    400026: stairs16
+    400028: stairs17
+    400030: stairs18
+    400032: stairs19
+    400034: stairs20
+    400036: stairs5
+    400038: stairs6
+    400040: stairs7
+    400042: stairs8
+    400044: stairs9
+    2300000: door
+    2300002: door_wall
+    2300004: sky_1
+    2300006: sky_2
+    2300008: sky_3
+    2300010: sky_4
+    2300012: stairs10
+    2300014: stairs11
+    2300016: stairs12
+    2300018: stairs13
+    2300020: stairs14
+    2300022: stairs15
+    2300024: stairs16
+    2300026: stairs17
+    2300028: stairs18
+    2300030: stairs19
+    2300032: stairs20
+    2300034: stairs5
+    2300036: stairs6
+    2300038: stairs7
+    2300040: stairs8
+    2300042: stairs9
+    3300000: door
+    3300002: door_wall
+    3300004: sky_1
+    3300006: sky_2
+    3300008: sky_3
+    3300010: sky_4
+    3300012: stairs10
+    3300014: stairs11
+    3300016: stairs12
+    3300018: stairs13
+    3300020: stairs14
+    3300022: stairs15
+    3300024: stairs16
+    3300026: stairs17
+    3300028: stairs18
+    3300030: stairs19
+    3300032: stairs20
+    3300034: stairs5
+    3300036: stairs6
+    3300038: stairs7
+    3300040: stairs8
+    3300042: stairs9
+    4300000: door_wall
+    4300002: door
+    4300004: stairs5
+    4300006: stairs6
+    4300008: stairs7
+    4300010: stairs8
+    4300012: stairs9
+    4300014: stairs10
+    4300016: stairs11
+    4300018: stairs12
+    4300020: stairs13
+    4300022: stairs14
+    4300024: stairs15
+    4300026: stairs16
+    4300028: stairs17
+    4300030: stairs18
+    4300032: stairs19
+    4300034: stairs20
+    4300036: sky_2
+    4300038: sky_3
+    4300040: sky_1
+    4300042: sky_4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,6 +4,9 @@ using UnityEngine.Networking;
 
 public class QuadMapping : NetworkBehaviour
 {
+	public bool UseClientCamInstead = false;
+	public bool ShowGUI = true;
+
 	float lowerLeft_x 	= 0.0F;
 	float lowerLeft_y 	= 0.0F;
 	float lowerRight_x 	= 0.0F;
@@ -63,8 +66,13 @@ public class QuadMapping : NetworkBehaviour
 
 		if (GetComponent<NetworkIdentity>().isServer){
 			print("Running as a server");
+			if (UseClientCamInstead){
+				clientCam.SetActive(true);
+				serverCam.SetActive(false);
+			}else{
 			clientCam.SetActive(false);
 			serverCam.SetActive(true);
+			}
 		}
 		else if (GetComponent<NetworkIdentity>().isClient){
 			print("Running as a client");
@@ -76,6 +84,7 @@ public class QuadMapping : NetworkBehaviour
 
 	void OnGUI()
 	{
+		if (ShowGUI){
 		// togle between server cam and client cam
 		if (GUI.Button(new Rect((Screen.width/2), 30, 50, 30), "toggle")){
 			isServer = !isServer; 
@@ -255,6 +264,7 @@ public class QuadMapping : NetworkBehaviour
 //		if (S_upperLeft_y != ""){
 //			upperLeft_y = float.Parse(S_upperLeft_y);
 //		}
+		}
 	}
 
 
