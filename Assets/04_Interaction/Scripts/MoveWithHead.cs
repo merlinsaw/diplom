@@ -7,6 +7,7 @@ public class MoveWithHead : NetworkBehaviour {
 	public Vector3 offset;
 	public GameObject Head;
 	static Vector3 HeadPosition;
+	private float CamMovementXfactor;
 
 	// Use this for initialization
 	void Start () {
@@ -25,9 +26,16 @@ public class MoveWithHead : NetworkBehaviour {
 						HeadPosition = Head.transform.position;
 					//}
 					if (!headmovement){
-						this.transform.position = new Vector3(0,1.8f,-4);
-					}else{
-						this.transform.position = new Vector3(HeadPosition.x+offset.x,offset.y,HeadPosition.z-offset.z);
+						//this.transform.position = new Vector3(0,1.8f,-4);
+						//idle
+				}else{
+//					if (5.0f-HeadPosition.z-offset.z <= 0){
+//						CamMovementXfactor = 0;
+//					}else{
+//						CamMovementXfactor = (5.0f-HeadPosition.z-offset.z)/7.0f;
+//				}
+					CamMovementXfactor = 0.73f;
+					this.transform.position = new Vector3((HeadPosition.x+offset.x)*CamMovementXfactor,offset.y,(HeadPosition.z-offset.z));
 					}
 				}
 			if (isServer == false){

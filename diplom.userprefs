@@ -1,11 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\03_GameOfLife\Scripts_1\GameInitializer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\anaglyphMatAndMasking.shader">
     <Files>
-      <File FileName="Assets\03_GameOfLife\Scripts_3\BoardCircle.cs" Line="10" Column="48" />
-      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Scripts\QuadMapping.cs" Line="1" Column="1" />
-      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\helper\FramesPerSecond.cs" Line="1" Column="1" />
-      <File FileName="Assets\03_GameOfLife\Scripts_1\GameInitializer.cs" Line="1" Column="1" />
+      <File FileName="..\..\Downloads\unity networking examples\tanks\tanks\Assets\Scripts\Fader.cs" Line="1" Column="1" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\anaglyphMatAndMasking.shader" Line="10" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

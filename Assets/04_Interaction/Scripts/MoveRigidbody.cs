@@ -7,6 +7,8 @@ public class MoveRigidbody : MonoBehaviour {
 	private Vector3 TargetPos;
 	private Rigidbody rigidbody;
 	private Vector3 velocity = Vector3.zero;
+	public bool antiMovement = false;
+	public float ScaleFactorX = 1.0f;
 	// Use this for initialization
 	void Start () {
 		rigidbody = this.transform.GetComponent<Rigidbody>();
@@ -22,8 +24,11 @@ public class MoveRigidbody : MonoBehaviour {
 			rigidbody.velocity = Vector3.zero;
 		}else{
 			if (Target != null){
+				if (antiMovement){
+					TargetPos = new Vector3 (Target.transform.position.x*-1f*ScaleFactorX,0,Target.transform.position.z);
+				}else{
 			TargetPos = new Vector3 (Target.transform.position.x,0,Target.transform.position.z);
-			
+				}
 			Vector3 dist = TargetPos - transform.position;
 			dist.y = 0; // ignore height differences
 			// calc a target vel proportional to distance (clamped to maxVel)

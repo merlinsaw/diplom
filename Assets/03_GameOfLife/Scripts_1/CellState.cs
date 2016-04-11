@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CellState : MonoBehaviour {
-    private const float DEFAULT_ANIMATION_TIME = 2f;
+    private const float DEFAULT_ANIMATION_TIME = 8f;
     public GameObject Sprite;
     public bool IsAlive;
 

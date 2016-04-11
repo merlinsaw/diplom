@@ -5,37 +5,54 @@
 		//_MainTex ("Texture", 2D) = "white" {}
 		_Color ("Main Color, Alpha", Color) = (1,1,1,1)
 		_LeftTex ("Left (RGB)", RECT) = "white" {} 
-        _RightTex ("Right (RGB)", RECT) = "white" {} 
+        _RightTex ("Right (RGB)", RECT) = "white" {}
+        _EdgeBlend ("Culling Mask", 2D) = "black" {}
+        _Cutoff ("Alpha cutoff", Range (0,1)) = 0.1
 		
 	}
 	Category
 	{
+	 
 		// No culling or depth
 		// Cull Off 
 		ZWrite Off 
 		ZTest Always 
 		Lighting On 
+		Blend SrcAlpha OneMinusSrcAlpha
+		//Blend Zero OneMinusDstAlpha
+		 //Alphatest LEqual 0.5
 		Tags{Queue = Transparent}
 		SubShader
 		{
+		
 			Pass 
 			{
-				ColorMask R 
+				ColorMask R
 				Cull Off
 				Material 
 				{
 					Emission [_Color]
-				} 
-		              
+				}  
+				
 				SetTexture [_LeftTex] 
 				{ 
 					Combine texture * primary, texture + primary 
 				} 
+				SetTexture [_EdgeBlend] 
+				{ 
+				//o.Albedo = texture.rgb;
+  				//o.Alpha = (1 - texture.a);
+  				//texture.a = (1 - texture.a);
+  				
+					Combine Previous ,  texture * previous
+				}    
+				  
+				
 			}
 		           
 			Pass 
 			{
-				ColorMask GB 
+				ColorMask GB
 				Cull Off 
 				Material 
 				{
@@ -45,6 +62,10 @@
 				{
 					Combine texture * primary, texture + primary
 				} 
+				SetTexture [_EdgeBlend] 
+				{ 
+					Combine Previous ,    texture * previous
+				}    
 			} 
 		}
 
