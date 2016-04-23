@@ -17,6 +17,8 @@ public class Example : MonoBehaviour {
 	public float right = 0.2F;
 	public float top = 0.2F;
 	public float bottom = -0.2F;
+	[Tooltip("this value is used for the camera matrix instead of the natural clipping plane")]
+	public float nearClipPlane = 0.1f;
 	void remote()
 	{
 		if (transform.name == "leftEyeFront") {
@@ -35,7 +37,7 @@ public class Example : MonoBehaviour {
 	void LateUpdate() {
 		remote ();
 		Camera cam = GetComponent<Camera>();
-		Matrix4x4 m = PerspectiveOffCenter(left, right, bottom, top, cam.nearClipPlane, cam.farClipPlane);
+		Matrix4x4 m = PerspectiveOffCenter(left, right, bottom, top, nearClipPlane, cam.farClipPlane);
 		cam.projectionMatrix = m;
 	}
 	static Matrix4x4 PerspectiveOffCenter(float left, float right, float bottom, float top, float near, float far) {

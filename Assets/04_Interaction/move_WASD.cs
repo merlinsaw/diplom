@@ -14,6 +14,10 @@ public class move_WASD : MonoBehaviour {
 
 	void Update() { 
 		if (enableKeys){
+			if (Input.GetKey(KeyCode.E))
+				transform.GetComponent<MoveRigidbody>().Movement = false;
+			if (Input.GetKey(KeyCode.Q))
+				transform.GetComponent<MoveRigidbody>().Movement = true;
 			if (Input.GetKey(KeyCode.W))
 				transform.position += Vector3.forward * speed * Time.deltaTime;
 			if (Input.GetKey(KeyCode.S))

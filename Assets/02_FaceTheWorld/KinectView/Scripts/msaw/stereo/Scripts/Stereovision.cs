@@ -99,8 +99,8 @@ public class Stereovision : MonoBehaviour {
 		//rightEye.transform.rotation = transform.rotation; 
 
 
-		leftEye.transform.LookAt (transform.position + (transform.TransformDirection (Vector3.forward) * S3DV.focalDistance)); 
-		rightEye.transform.LookAt (transform.position + (transform.TransformDirection (Vector3.forward) * S3DV.focalDistance)); 
+		//leftEye.transform.LookAt (transform.position + (transform.TransformDirection (Vector3.forward) * S3DV.focalDistance)); 
+		//rightEye.transform.LookAt (transform.position + (transform.TransformDirection (Vector3.forward) * S3DV.focalDistance)); 
 		
 		leftEye.transform.parent = transform; 
 		rightEye.transform.parent = transform; 

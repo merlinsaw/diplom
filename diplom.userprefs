@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\anaglyphMatAndMasking.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Scripts\QuadMapping.cs">
     <Files>
-      <File FileName="..\..\Downloads\unity networking examples\tanks\tanks\Assets\Scripts\Fader.cs" Line="1" Column="1" />
-      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\anaglyphMatAndMasking.shader" Line="10" Column="51" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Scripts\QuadMapping.cs" Line="369" Column="31" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\FaceTextureAnimation.cs" Line="1" Column="1" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\FaceSourceView.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

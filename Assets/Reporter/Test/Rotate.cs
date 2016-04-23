@@ -4,6 +4,7 @@ using System.Collections;
 public class Rotate : MonoBehaviour {
 
 	Vector3 angle ;
+	public int speed = 100;
 	// Use this for initialization
 	void Start () {
 		angle = transform.eulerAngles ;
@@ -11,7 +12,7 @@ public class Rotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		angle.y += Time.deltaTime * 100 ;
+		angle.y += Time.deltaTime * speed ;
 		transform.eulerAngles = angle ;
 	}
 }
