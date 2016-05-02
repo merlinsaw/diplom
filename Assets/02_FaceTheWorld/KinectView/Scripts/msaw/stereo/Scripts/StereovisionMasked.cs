@@ -119,8 +119,8 @@ public class StereovisionMasked : NetworkBehaviour {
 		//rightEye.transform.rotation = transform.rotation; 
 		
 		
-		leftEye.transform.LookAt (transform.position + (transform.TransformDirection (Vector3.forward) * S3DVM.focalDistance)); 
-		rightEye.transform.LookAt (transform.position + (transform.TransformDirection (Vector3.forward) * S3DVM.focalDistance)); 
+		//leftEye.transform.LookAt (transform.position + (transform.TransformDirection (Vector3.forward) * S3DVM.focalDistance)); 
+		//rightEye.transform.LookAt (transform.position + (transform.TransformDirection (Vector3.forward) * S3DVM.focalDistance)); 
 		
 		leftEye.transform.parent = transform; 
 		rightEye.transform.parent = transform; 

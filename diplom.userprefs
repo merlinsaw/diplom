@@ -1,10 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Scripts\QuadMapping.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\Unity3D-Plane-Clipping-master\Scripts\ClippableObject.cs">
     <Files>
-      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Scripts\QuadMapping.cs" Line="369" Column="31" />
-      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\FaceTextureAnimation.cs" Line="1" Column="1" />
-      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\FaceSourceView.cs" Line="1" Column="1" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\Unity3D-Plane-Clipping-master\Shaders\StandardClippable.shader" Line="187" Column="33" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\Unity3D-Plane-Clipping-master\Shaders\UnityStandardCoreForwardClippable.cginc" Line="1" Column="1" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\Unity3D-Plane-Clipping-master\Shaders\standard_clipped.cginc" Line="1" Column="1" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\Unity3D-Plane-Clipping-master\Shaders\plane_clipping.cginc" Line="1" Column="1" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\Unity3D-Plane-Clipping-master\Scripts\ClippableObject.cs" Line="67" Column="6" />
+      <File FileName="Assets\crop.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

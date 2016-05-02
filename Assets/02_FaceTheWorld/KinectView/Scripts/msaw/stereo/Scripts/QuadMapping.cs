@@ -309,7 +309,6 @@ public class QuadMapping : NetworkBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		//TODO: sss
 		if (Input.GetKey(KeyCode.T)){
 
 				ShowGUI = true;
