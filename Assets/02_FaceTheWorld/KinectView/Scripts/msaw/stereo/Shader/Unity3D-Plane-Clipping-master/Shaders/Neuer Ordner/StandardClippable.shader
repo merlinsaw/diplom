@@ -6,8 +6,8 @@
 		
 		_Cutoff("Alpha Cutoff", Range(0.0, 1.0)) = 0.5
 
-		_Glossiness("Smoothness", Range(0.0, 1.0)) = 0.5
-		[Gamma] _Metallic("Metallic", Range(0.0, 1.0)) = 0.0
+		_Glossiness("Smoothness", Range(0.0, 1.0)) = 0.7
+		[Gamma] _Metallic("Metallic", Range(0.0, 1.0)) = 0.4
 		_MetallicGlossMap("Metallic", 2D) = "white" {}
 
 		_BumpScale("Scale", Float) = 1.0

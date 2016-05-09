@@ -8,7 +8,10 @@ class ColliderTrigger3 : NetworkBehaviour {
 	private Transform TriggerZone;
 
 	private PlayerCameraController _PlayerCameraController;
-	public ColliderPosition _ColliderPosition;
+	[Tooltip("Link the CycleRoomCameraController to this Object")]
+	public GameObject CycleRoomCameraController;
+	public ColliderPosition _SetColliderPosition;
+
 
 	public enum ColliderPosition{
 		Left,
@@ -17,13 +20,16 @@ class ColliderTrigger3 : NetworkBehaviour {
 		
 	// Use this for initialization
 	void Start () {
-		_PlayerCameraController = transform.parent.GetComponent<PlayerCameraController>();
+		//_PlayerCameraController = transform.parent.GetComponent<PlayerCameraController>();
+		if (CycleRoomCameraController != null){
+		_PlayerCameraController = CycleRoomCameraController.GetComponent<PlayerCameraController>();
 		TriggerZone = this.transform;
+		}else{Debug.LogError("Link the CycleRoomCameraController to the "+ transform.name +" Object in the Inspector");}
 	}
 
 	void OnTriggerEnter (Collider Player){
 		Debug.Log("Collision Enter: " + Player.name + " -> " + TriggerZone.name);
-		_PlayerCameraController.CurrentCameraDirection = (PlayerCameraController.CameraDirections)_ColliderPosition;//(PlayerCameraController.CameraDirection)_ColliderPosition;
+		_PlayerCameraController.CurrentCameraDirection = (PlayerCameraController.CameraDirections)_SetColliderPosition;//(PlayerCameraController.CameraDirection)_SetColliderPosition;
 
 	}
 	void OnTriggerExit (Collider Player){

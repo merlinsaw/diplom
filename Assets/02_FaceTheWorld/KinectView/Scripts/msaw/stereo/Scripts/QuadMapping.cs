@@ -11,8 +11,12 @@ public class QuadMapping : NetworkBehaviour
 	public bool UseBothCameras = false;
 	public ServerDisplayPosition _ServerDisplayPosition;
 	public bool ShowGUI = true;
-	public GameObject gridFront;
-	public GameObject gridBack;
+	//public GameObject gridFront;
+	//public GameObject gridBack;
+	[Tooltip("a metarial for the prjectionmapping.")]
+	public Material GridMaterial;
+	Material serverMat;
+	Material clientMat;
 
 	public enum ServerDisplayPosition{
 		Left,
@@ -58,6 +62,9 @@ public class QuadMapping : NetworkBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		//TODO: @melin [Mapping Texture] set old matarial
+		serverMat = serverCam.transform.GetComponent<Stereovision>().anaglyphMat;
+		clientMat = clientCam.transform.GetComponent<StereovisionMasked>().anaglyphMatMasked;
 		LoadMapping();
 		if (!ShowGUI){
 		// hide mouse cursor
@@ -310,18 +317,22 @@ public class QuadMapping : NetworkBehaviour
 	void Update ()
 	{
 		if (Input.GetKey(KeyCode.T)){
-
+			//TODO: @merlin [Mapping texture] switch the material
 				ShowGUI = true;
 				LoadMapping();
-				gridFront.SetActive(true);
-				gridBack.SetActive(true);
+				//gridFront.SetActive(true);
+				//gridBack.SetActive(true);
+				serverCam.transform.GetComponent<Stereovision>().anaglyphMat = GridMaterial;
+				clientCam.transform.GetComponent<StereovisionMasked>().anaglyphMatMasked = GridMaterial;
 
 		}
 			if (Input.GetKey(KeyCode.R)){
 
 				ShowGUI = false;
-				gridFront.SetActive(false);
-				gridBack.SetActive(false);
+				//gridFront.SetActive(false);
+				//gridBack.SetActive(false);
+				serverCam.transform.GetComponent<Stereovision>().anaglyphMat = serverMat;
+				clientCam.transform.GetComponent<StereovisionMasked>().anaglyphMatMasked = clientMat;
 			}
 		
 			

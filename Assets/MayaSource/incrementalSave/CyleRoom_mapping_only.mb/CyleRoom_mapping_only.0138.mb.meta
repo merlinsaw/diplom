@@ -1,0 +1,3391 @@
+fileFormatVersion: 2
+guid: a1abbd276412b5e4287bcbef14785a2a
+timeCreated: 1462346670
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: A1
+    100002: B1
+    100004: back
+    100006: bezier1
+    100008: bezier100
+    100010: bezier101
+    100012: bezier102
+    100014: bezier103
+    100016: bezier104
+    100018: bezier105
+    100020: bezier106
+    100022: bezier107
+    100024: bezier108
+    100026: bezier109
+    100028: bezier110
+    100030: bezier111
+    100032: bezier112
+    100034: bezier113
+    100036: bezier114
+    100038: bezier115
+    100040: bezier116
+    100042: bezier119
+    100044: bezier120
+    100046: bezier121
+    100048: bezier122
+    100050: bezier123
+    100052: bezier124
+    100054: bezier125
+    100056: bezier126
+    100058: bezier129
+    100060: bezier130
+    100062: bezier131
+    100064: bezier133
+    100066: bezier134
+    100068: bezier135
+    100070: bezier136
+    100072: bezier137
+    100074: bezier139
+    100076: bezier140
+    100078: bezier141
+    100080: bezier149
+    100082: bezier150
+    100084: bezier151
+    100086: bezier152
+    100088: bezier153
+    100090: bezier155
+    100092: bezier156
+    100094: bezier158
+    100096: bezier160
+    100098: bezier161
+    100100: bezier161 1
+    100102: bezier161 2
+    100104: bezier162
+    100106: bezier163
+    100108: bezier164
+    100110: bezier164 1
+    100112: bezier165
+    100114: bezier165 1
+    100116: bezier165 2
+    100118: bezier165 3
+    100120: bezier166
+    100122: bezier166 1
+    100124: bezier166 2
+    100126: bezier166 3
+    100128: bezier167
+    100130: bezier168
+    100132: bezier169
+    100134: bezier170
+    100136: bezier171
+    100138: bezier172
+    100140: bezier173
+    100142: bezier174
+    100144: bezier175
+    100146: bezier176
+    100148: bezier177
+    100150: bezier179
+    100152: bezier180
+    100154: bezier180 1
+    100156: bezier181
+    100158: bezier181 1
+    100160: bezier182
+    100162: bezier182 1
+    100164: bezier182 2
+    100166: bezier183
+    100168: bezier183 1
+    100170: bezier183 2
+    100172: bezier184
+    100174: bezier184 1
+    100176: bezier185
+    100178: bezier185 1
+    100180: bezier2
+    100182: bezier204
+    100184: bezier205
+    100186: bezier205 1
+    100188: bezier210
+    100190: bezier211
+    100192: bezier212
+    100194: bezier213
+    100196: bezier214
+    100198: bezier215
+    100200: bezier216
+    100202: bezier217
+    100204: bezier218
+    100206: bezier219
+    100208: bezier220
+    100210: bezier221
+    100212: bezier222
+    100214: bezier223
+    100216: bezier224
+    100218: bezier225
+    100220: bezier226
+    100222: bezier227
+    100224: bezier228
+    100226: bezier229
+    100228: bezier230
+    100230: bezier231
+    100232: bezier232
+    100234: bezier233
+    100236: bezier234
+    100238: bezier235
+    100240: bezier236
+    100242: bezier237
+    100244: bezier244
+    100246: bezier245
+    100248: bezier246
+    100250: bezier247
+    100252: bezier248
+    100254: bezier249
+    100256: bezier250
+    100258: bezier251
+    100260: bezier252
+    100262: bezier252 1
+    100264: bezier252 2
+    100266: bezier252 3
+    100268: bezier253
+    100270: bezier253 1
+    100272: bezier253 2
+    100274: bezier253 3
+    100276: bezier254
+    100278: bezier254 1
+    100280: bezier254 2
+    100282: bezier254 3
+    100284: bezier255
+    100286: bezier255 1
+    100288: bezier255 2
+    100290: bezier255 3
+    100292: bezier256
+    100294: bezier256 1
+    100296: bezier256 2
+    100298: bezier256 3
+    100300: bezier257
+    100302: bezier257 1
+    100304: bezier257 2
+    100306: bezier257 3
+    100308: bezier258
+    100310: bezier258 1
+    100312: bezier258 2
+    100314: bezier258 3
+    100316: bezier259
+    100318: bezier259 1
+    100320: bezier259 2
+    100322: bezier259 3
+    100324: bezier260
+    100326: bezier260 1
+    100328: bezier260 2
+    100330: bezier260 3
+    100332: bezier261
+    100334: bezier261 1
+    100336: bezier261 2
+    100338: bezier261 3
+    100340: bezier262
+    100342: bezier262 1
+    100344: bezier262 2
+    100346: bezier262 3
+    100348: bezier263
+    100350: bezier263 1
+    100352: bezier263 2
+    100354: bezier263 3
+    100356: bezier264
+    100358: bezier264 1
+    100360: bezier264 2
+    100362: bezier264 3
+    100364: bezier265
+    100366: bezier265 1
+    100368: bezier265 2
+    100370: bezier265 3
+    100372: bezier267
+    100374: bezier268
+    100376: bezier269
+    100378: bezier280
+    100380: bezier282
+    100382: bezier284
+    100384: bezier286
+    100386: bezier288
+    100388: bezier290
+    100390: bezier293
+    100392: bezier294
+    100394: bezier295
+    100396: bezier296
+    100398: bezier297
+    100400: bezier298
+    100402: bezier299
+    100404: bezier3
+    100406: bezier300
+    100408: bezier301
+    100410: bezier309
+    100412: bezier310
+    100414: bezier311
+    100416: bezier312
+    100418: bezier313
+    100420: bezier314
+    100422: bezier315
+    100424: bezier316
+    100426: bezier317
+    100428: bezier318
+    100430: bezier319
+    100432: bezier322
+    100434: bezier323
+    100436: bezier326
+    100438: bezier327
+    100440: bezier328
+    100442: bezier329
+    100444: bezier330
+    100446: bezier331
+    100448: bezier332
+    100450: bezier333
+    100452: bezier347
+    100454: bezier348
+    100456: bezier349
+    100458: bezier350
+    100460: bezier351
+    100462: bezier352
+    100464: bezier353
+    100466: bezier354
+    100468: bezier356
+    100470: bezier357
+    100472: bezier358
+    100474: bezier359
+    100476: bezier360
+    100478: bezier361
+    100480: bezier362
+    100482: bezier363
+    100484: bezier364
+    100486: bezier365
+    100488: bezier366
+    100490: bezier367
+    100492: bezier368
+    100494: bezier369
+    100496: bezier37
+    100498: bezier370
+    100500: bezier371
+    100502: bezier372
+    100504: bezier373
+    100506: bezier374
+    100508: bezier375
+    100510: bezier376
+    100512: bezier377
+    100514: bezier378
+    100516: bezier379
+    100518: bezier38
+    100520: bezier380
+    100522: bezier381
+    100524: bezier382
+    100526: bezier383
+    100528: bezier384
+    100530: bezier384 1
+    100532: bezier385
+    100534: bezier385 1
+    100536: bezier386
+    100538: bezier387
+    100540: bezier39
+    100542: bezier4
+    100544: bezier40
+    100546: bezier41
+    100548: bezier42
+    100550: bezier43
+    100552: bezier44
+    100554: bezier45
+    100556: bezier46
+    100558: bezier47
+    100560: bezier48
+    100562: bezier49
+    100564: bezier50
+    100566: bezier70
+    100568: bezier76
+    100570: bezier77
+    100572: bezier78
+    100574: bezier79
+    100576: bezier80
+    100578: bezier81
+    100580: bezier82
+    100582: bezier83
+    100584: bezier84
+    100586: bezier85
+    100588: bezier86
+    100590: bezier87
+    100592: bezier88
+    100594: bezier89
+    100596: bezier92
+    100598: bezier93
+    100600: bezier94
+    100602: bezier95
+    100604: bezier96
+    100606: bezier97
+    100608: bezier98
+    100610: bezier99
+    100612: bottom
+    100614: bottomnurbsSquare1
+    100616: bottomnurbsSquare1 1
+    100618: bottomnurbsSquare1 10
+    100620: bottomnurbsSquare1 11
+    100622: bottomnurbsSquare1 12
+    100624: bottomnurbsSquare1 13
+    100626: bottomnurbsSquare1 14
+    100628: bottomnurbsSquare1 15
+    100630: bottomnurbsSquare1 16
+    100632: bottomnurbsSquare1 2
+    100634: bottomnurbsSquare1 3
+    100636: bottomnurbsSquare1 4
+    100638: bottomnurbsSquare1 5
+    100640: bottomnurbsSquare1 6
+    100642: bottomnurbsSquare1 7
+    100644: bottomnurbsSquare1 8
+    100646: bottomnurbsSquare1 9
+    100648: brush162Main
+    100650: brush162Main1
+    100652: brush162Main10
+    100654: brush162Main11
+    100656: brush162Main12
+    100658: brush162Main13
+    100660: brush162Main14
+    100662: brush162Main15
+    100664: brush162Main16
+    100666: brush162Main17
+    100668: brush162Main18
+    100670: brush162Main19
+    100672: brush162Main2
+    100674: brush162Main20
+    100676: brush162Main21
+    100678: brush162Main22
+    100680: brush162Main23
+    100682: brush162Main24
+    100684: brush162Main25
+    100686: brush162Main26
+    100688: brush162Main27
+    100690: brush162Main28
+    100692: brush162Main29
+    100694: brush162Main3
+    100696: brush162Main30
+    100698: brush162Main31
+    100700: brush162Main32
+    100702: brush162Main33
+    100704: brush162Main34
+    100706: brush162Main35
+    100708: brush162Main36
+    100710: brush162Main37
+    100712: brush162Main38
+    100714: brush162Main39
+    100716: brush162Main4
+    100718: brush162Main40
+    100720: brush162Main41
+    100722: brush162Main42
+    100724: brush162Main43
+    100726: brush162Main44
+    100728: brush162Main45
+    100730: brush162Main46
+    100732: brush162Main47
+    100734: brush162Main48
+    100736: brush162Main49
+    100738: brush162Main5
+    100740: brush162Main50
+    100742: brush162Main51
+    100744: brush162Main52
+    100746: brush162Main53
+    100748: brush162Main54
+    100750: brush162Main55
+    100752: brush162Main56
+    100754: brush162Main57
+    100756: brush162Main58
+    100758: brush162Main59
+    100760: brush162Main6
+    100762: brush162Main60
+    100764: brush162Main61
+    100766: brush162Main62
+    100768: brush162Main63
+    100770: brush162Main64
+    100772: brush162Main65
+    100774: brush162Main66
+    100776: brush162Main67
+    100778: brush162Main68
+    100780: brush162Main7
+    100782: brush162Main8
+    100784: brush162Main9
+    100786: brush64Main
+    100788: brush64Main1
+    100790: brush64Main10
+    100792: brush64Main11
+    100794: brush64Main12
+    100796: brush64Main13
+    100798: brush64Main14
+    100800: brush64Main15
+    100802: brush64Main16
+    100804: brush64Main17
+    100806: brush64Main18
+    100808: brush64Main19
+    100810: brush64Main2
+    100812: brush64Main20
+    100814: brush64Main21
+    100816: brush64Main22
+    100818: brush64Main23
+    100820: brush64Main24
+    100822: brush64Main25
+    100824: brush64Main26
+    100826: brush64Main27
+    100828: brush64Main28
+    100830: brush64Main29
+    100832: brush64Main3
+    100834: brush64Main30
+    100836: brush64Main31
+    100838: brush64Main32
+    100840: brush64Main33
+    100842: brush64Main34
+    100844: brush64Main35
+    100846: brush64Main36
+    100848: brush64Main37
+    100850: brush64Main38
+    100852: brush64Main39
+    100854: brush64Main4
+    100856: brush64Main40
+    100858: brush64Main41
+    100860: brush64Main42
+    100862: brush64Main43
+    100864: brush64Main44
+    100866: brush64Main45
+    100868: brush64Main46
+    100870: brush64Main47
+    100872: brush64Main48
+    100874: brush64Main49
+    100876: brush64Main5
+    100878: brush64Main50
+    100880: brush64Main51
+    100882: brush64Main52
+    100884: brush64Main53
+    100886: brush64Main54
+    100888: brush64Main55
+    100890: brush64Main56
+    100892: brush64Main57
+    100894: brush64Main58
+    100896: brush64Main59
+    100898: brush64Main6
+    100900: brush64Main60
+    100902: brush64Main61
+    100904: brush64Main62
+    100906: brush64Main7
+    100908: brush64Main8
+    100910: brush64Main9
+    100912: brush93Main
+    100914: brush93Main1
+    100916: brush93Main10
+    100918: brush93Main11
+    100920: brush93Main12
+    100922: brush93Main13
+    100924: brush93Main14
+    100926: brush93Main15
+    100928: brush93Main16
+    100930: brush93Main17
+    100932: brush93Main18
+    100934: brush93Main19
+    100936: brush93Main2
+    100938: brush93Main20
+    100940: brush93Main21
+    100942: brush93Main22
+    100944: brush93Main23
+    100946: brush93Main24
+    100948: brush93Main25
+    100950: brush93Main26
+    100952: brush93Main27
+    100954: brush93Main28
+    100956: brush93Main3
+    100958: brush93Main4
+    100960: brush93Main5
+    100962: brush93Main6
+    100964: brush93Main7
+    100966: brush93Main8
+    100968: brush93Main9
+    100970: C1
+    100972: C2
+    100974: cactus13Main
+    100976: cactus13Main 1
+    100978: cactus13Main 2
+    100980: cactus13Main 3
+    100982: cactus13Main 4
+    100984: cactus13Main 5
+    100986: cactus13Main 6
+    100988: cactus13Main 7
+    100990: cactus13Main 8
+    100992: cactus13Main 9
+    100994: cactus13MeshGroup10
+    100996: cactus13MeshGroup11
+    100998: cactus13MeshGroup12
+    101000: cactus13MeshGroup13
+    101002: cactus13MeshGroup14
+    101004: cactus13MeshGroup15
+    101006: cactus13MeshGroup16
+    101008: cactus13MeshGroup17
+    101010: cactus13MeshGroup8
+    101012: cactus13MeshGroup9
+    101014: cam_rotation
+    101016: center
+    101018: curve10
+    101020: curve10detachedCurve2
+    101022: curve10detachedCurve2 1
+    101024: curve10detachedCurve4
+    101026: curve12
+    101028: curve12detachedCurve2
+    101030: curve14
+    101032: curve16
+    101034: curve18
+    101036: curve20
+    101038: curve21
+    101040: curve21detachedCurve2
+    101042: curve21detachedCurve2 1
+    101044: curve21detachedCurve4
+    101046: curve23
+    101048: curve25
+    101050: curve27
+    101052: curve29
+    101054: curve31
+    101056: curve33
+    101058: curve35
+    101060: curve37
+    101062: curve39
+    101064: curve4
+    101066: curve41
+    101068: curve43
+    101070: curve45
+    101072: curve47
+    101074: curve49
+    101076: curve4detachedCurve2
+    101078: curve4detachedCurve2 1
+    101080: curve4detachedCurve4
+    101082: curve51
+    101084: curve53
+    101086: curve55
+    101088: curve57
+    101090: curve59
+    101092: curve6
+    101094: curve61
+    101096: curve63
+    101098: curve65
+    101100: curve66
+    101102: curve67
+    101104: curve68
+    101106: curve69
+    101108: curve6detachedCurve2
+    101110: curve6detachedCurve2 1
+    101112: curve6detachedCurve4
+    101114: curve70
+    101116: curve71
+    101118: curve72
+    101120: curve73
+    101122: curve74
+    101124: curve75
+    101126: curve78
+    101128: curve8
+    101130: curve80
+    101132: curve82
+    101134: curve84
+    101136: curve86
+    101138: curve88
+    101140: curve8detachedCurve2
+    101142: curve8detachedCurve2 1
+    101144: curve8detachedCurve4
+    101146: curve90
+    101148: curve92
+    101150: curve94
+    101152: curve95
+    101154: curves
+    101156: curves 1
+    101158: curves 2
+    101160: curves 3
+    101162: //RootNode
+    101164: D1
+    101166: distant_room
+    101168: distant_room1
+    101170: duplicatedCurve1
+    101172: duplicatedCurve10
+    101174: duplicatedCurve2
+    101176: duplicatedCurve3
+    101178: duplicatedCurve4
+    101180: duplicatedCurve5
+    101182: duplicatedCurve6
+    101184: duplicatedCurve7
+    101186: duplicatedCurve8
+    101188: duplicatedCurve9
+    101190: E1
+    101192: E2
+    101194: flower_backup
+    101196: gold15Main
+    101198: gold15Main1
+    101200: gold15Main10
+    101202: gold15Main11
+    101204: gold15Main12
+    101206: gold15Main13
+    101208: gold15Main14
+    101210: gold15Main15
+    101212: gold15Main16
+    101214: gold15Main17
+    101216: gold15Main18
+    101218: gold15Main19
+    101220: gold15Main2
+    101222: gold15Main20
+    101224: gold15Main21
+    101226: gold15Main22
+    101228: gold15Main23
+    101230: gold15Main24
+    101232: gold15Main25
+    101234: gold15Main26
+    101236: gold15Main27
+    101238: gold15Main28
+    101240: gold15Main29
+    101242: gold15Main3
+    101244: gold15Main30
+    101246: gold15Main31
+    101248: gold15Main32
+    101250: gold15Main33
+    101252: gold15Main34
+    101254: gold15Main35
+    101256: gold15Main36
+    101258: gold15Main37
+    101260: gold15Main38
+    101262: gold15Main39
+    101264: gold15Main4
+    101266: gold15Main40
+    101268: gold15Main41
+    101270: gold15Main42
+    101272: gold15Main43
+    101274: gold15Main44
+    101276: gold15Main45
+    101278: gold15Main46
+    101280: gold15Main47
+    101282: gold15Main48
+    101284: gold15Main49
+    101286: gold15Main5
+    101288: gold15Main50
+    101290: gold15Main51
+    101292: gold15Main52
+    101294: gold15Main53
+    101296: gold15Main6
+    101298: gold15Main7
+    101300: gold15Main8
+    101302: gold15Main9
+    101304: gridwall1
+    101306: gridwall2
+    101308: gridwall3
+    101310: group
+    101312: group168
+    101314: group169
+    101316: group172
+    101318: group175
+    101320: group177
+    101322: group181
+    101324: group182
+    101326: group183
+    101328: group184
+    101330: group185
+    101332: group186
+    101334: group187
+    101336: group188
+    101338: group189
+    101340: group190
+    101342: group191
+    101344: group192
+    101346: group193
+    101348: group194
+    101350: group195
+    101352: group196
+    101354: group197
+    101356: group199
+    101358: group2
+    101360: group200
+    101362: group201
+    101364: group202
+    101366: group203
+    101368: group4
+    101370: group60
+    101372: ladder
+    101374: left
+    101376: leftnurbsSquare1
+    101378: leftnurbsSquare1 1
+    101380: leftnurbsSquare1 10
+    101382: leftnurbsSquare1 11
+    101384: leftnurbsSquare1 12
+    101386: leftnurbsSquare1 13
+    101388: leftnurbsSquare1 14
+    101390: leftnurbsSquare1 15
+    101392: leftnurbsSquare1 16
+    101394: leftnurbsSquare1 2
+    101396: leftnurbsSquare1 3
+    101398: leftnurbsSquare1 4
+    101400: leftnurbsSquare1 5
+    101402: leftnurbsSquare1 6
+    101404: leftnurbsSquare1 7
+    101406: leftnurbsSquare1 8
+    101408: leftnurbsSquare1 9
+    101410: locator1
+    101412: locator2
+    101414: mesh
+    101416: meshes
+    101418: meshes 1
+    101420: meshes 2
+    101422: nurbsCircle1
+    101424: nurbsCircle1 1
+    101426: nurbsCircle1 2
+    101428: nurbsCircle18
+    101430: nurbsCircle19
+    101432: nurbsCircle2
+    101434: nurbsCircle2 1
+    101436: nurbsCircle2 2
+    101438: nurbsCircle20
+    101440: nurbsCircle5
+    101442: nurbsCircle6
+    101444: nurbsCircle7
+    101446: nurbsCircle8
+    101448: nurbsSquare1
+    101450: nurbsSquare10
+    101452: nurbsSquare11
+    101454: nurbsSquare12
+    101456: nurbsSquare13
+    101458: nurbsSquare14
+    101460: nurbsSquare15
+    101462: nurbsSquare16
+    101464: nurbsSquare17
+    101466: nurbsSquare2
+    101468: nurbsSquare3
+    101470: nurbsSquare4
+    101472: nurbsSquare5
+    101474: nurbsSquare6
+    101476: nurbsSquare7
+    101478: nurbsSquare8
+    101480: nurbsSquare9
+    101482: pasted__CycleRoom
+    101484: pasted__CycleRoom1
+    101486: pasted__CycleRoom3
+    101488: pasted__CycleRoom4
+    101490: pasted__group61
+    101492: pasted__group61 1
+    101494: pasted__group61 2
+    101496: pasted__group61 3
+    101498: pasted__pPipe1
+    101500: pasted__pPipe1 1
+    101502: pasted__pPipe1 2
+    101504: pasted__pPipe1 3
+    101506: pasted__pPipe14
+    101508: pasted__pPipe16
+    101510: pasted__pPipe16 1
+    101512: pasted__pPipe16 2
+    101514: pasted__pPipe16 3
+    101516: pasted__pPipe17
+    101518: pasted__pPipe17 1
+    101520: pasted__pPipe17 2
+    101522: pasted__pPipe17 3
+    101524: pasted__pPipe18
+    101526: pasted__pPipe18 1
+    101528: pasted__pPipe18 2
+    101530: pasted__pPipe18 3
+    101532: pasted__pPipe19
+    101534: pasted__pPipe19 1
+    101536: pasted__pPipe19 2
+    101538: pasted__pPipe19 3
+    101540: pasted__pPipe20
+    101542: pasted__pPipe20 1
+    101544: pasted__pPipe20 2
+    101546: pasted__pPipe20 3
+    101548: pasted__pPipe21
+    101550: pasted__pPipe21 1
+    101552: pasted__pPipe21 2
+    101554: pasted__pPipe21 3
+    101556: pasted__pPipe22
+    101558: pasted__pPipe22 1
+    101560: pasted__pPipe22 2
+    101562: pasted__pPipe22 3
+    101564: pasted__pPipe23
+    101566: pasted__pPipe23 1
+    101568: pasted__pPipe23 2
+    101570: pasted__pPipe23 3
+    101572: pasted__pPipe24
+    101574: pasted__pPipe24 1
+    101576: pasted__pPipe24 2
+    101578: pasted__pPipe24 3
+    101580: pasted__pPipe25
+    101582: pasted__pPipe25 1
+    101584: pasted__pPipe25 2
+    101586: pasted__pPipe25 3
+    101588: pasted__pPipe26
+    101590: pasted__pPipe26 1
+    101592: pasted__pPipe26 2
+    101594: pasted__pPipe26 3
+    101596: pasted__pPipe27
+    101598: pasted__pPipe27 1
+    101600: pasted__pPipe27 2
+    101602: pasted__pPipe27 3
+    101604: pasted__pPipe28
+    101606: pasted__pPipe28 1
+    101608: pasted__pPipe28 2
+    101610: pasted__pPipe28 3
+    101612: pasted__pPipe29
+    101614: pasted__pPipe29 1
+    101616: pasted__pPipe29 2
+    101618: pasted__pPipe29 3
+    101620: pasted__pPipe30
+    101622: pasted__pPipe30 1
+    101624: pasted__pPipe30 2
+    101626: pasted__pPipe30 3
+    101628: pasted__pPipe31
+    101630: pasted__pPipe31 1
+    101632: pasted__pPipe31 2
+    101634: pasted__pPipe31 3
+    101636: pasted__pPipe32
+    101638: pasted__pPipe32 1
+    101640: pasted__pPipe32 2
+    101642: pasted__pPipe32 3
+    101644: pasted__pPipe33
+    101646: pasted__pPipe33 1
+    101648: pasted__pPipe33 2
+    101650: pasted__pPipe33 3
+    101652: pasted__pPipe34
+    101654: pasted__pPipe34 1
+    101656: pasted__pPipe34 2
+    101658: pasted__pPipe34 3
+    101660: pasted__Room_Rotation
+    101662: Patterns
+    101664: pCube139
+    101666: pCube140
+    101668: pCube141
+    101670: pCube152
+    101672: pCube153
+    101674: pCube154
+    101676: pCylinder1
+    101678: persp2
+    101680: polySurface2
+    101682: polyToSubd1
+    101684: pPipe10
+    101686: pPipe12
+    101688: pPipe13
+    101690: pPipe2
+    101692: pPipe3
+    101694: pPipe4
+    101696: pPipe5
+    101698: pPipe6
+    101700: pPipe7
+    101702: pPipe8
+    101704: pPipe9
+    101706: pTorus1
+    101708: pTorus10
+    101710: pTorus11
+    101712: pTorus12
+    101714: pTorus13
+    101716: pTorus14
+    101718: pTorus2
+    101720: pTorus3
+    101722: pTorus4
+    101724: pTorus5
+    101726: pTorus6
+    101728: pTorus7
+    101730: pTorus8
+    101732: pTorus9
+    101734: radius
+    101736: radius_1
+    101738: rightnurbsSquare1
+    101740: rightnurbsSquare1 1
+    101742: rightnurbsSquare1 10
+    101744: rightnurbsSquare1 11
+    101746: rightnurbsSquare1 12
+    101748: rightnurbsSquare1 13
+    101750: rightnurbsSquare1 14
+    101752: rightnurbsSquare1 15
+    101754: rightnurbsSquare1 16
+    101756: rightnurbsSquare1 2
+    101758: rightnurbsSquare1 3
+    101760: rightnurbsSquare1 4
+    101762: rightnurbsSquare1 5
+    101764: rightnurbsSquare1 6
+    101766: rightnurbsSquare1 7
+    101768: rightnurbsSquare1 8
+    101770: rightnurbsSquare1 9
+    101772: ring_globe
+    101774: Room_Rotation
+    101776: sky_dome
+    101778: stereoCamera
+    101780: stroke
+    101782: stroke1
+    101784: stroke100
+    101786: stroke101
+    101788: stroke102
+    101790: stroke103
+    101792: stroke104
+    101794: stroke105
+    101796: stroke106
+    101798: stroke107
+    101800: stroke108
+    101802: stroke109
+    101804: stroke11
+    101806: stroke110
+    101808: stroke111
+    101810: stroke112
+    101812: stroke113
+    101814: stroke114
+    101816: stroke115
+    101818: stroke116
+    101820: stroke117
+    101822: stroke118
+    101824: stroke119
+    101826: stroke12
+    101828: stroke120
+    101830: stroke121
+    101832: stroke122
+    101834: stroke123
+    101836: stroke124
+    101838: stroke125
+    101840: stroke126
+    101842: stroke127
+    101844: stroke128
+    101846: stroke129
+    101848: stroke13
+    101850: stroke130
+    101852: stroke131
+    101854: stroke132
+    101856: stroke133
+    101858: stroke134
+    101860: stroke135
+    101862: stroke136
+    101864: stroke137
+    101866: stroke138
+    101868: stroke139
+    101870: stroke14
+    101872: stroke140
+    101874: stroke141
+    101876: stroke142
+    101878: stroke143
+    101880: stroke144
+    101882: stroke145
+    101884: stroke146
+    101886: stroke147
+    101888: stroke148
+    101890: stroke149
+    101892: stroke15
+    101894: stroke150
+    101896: stroke151
+    101898: stroke152
+    101900: stroke153
+    101902: stroke154
+    101904: stroke155
+    101906: stroke156
+    101908: stroke157
+    101910: stroke158
+    101912: stroke159
+    101914: stroke16
+    101916: stroke160
+    101918: stroke161
+    101920: stroke162
+    101922: stroke163
+    101924: stroke164
+    101926: stroke165
+    101928: stroke166
+    101930: stroke167
+    101932: stroke168
+    101934: stroke169
+    101936: stroke17
+    101938: stroke170
+    101940: stroke171
+    101942: stroke172
+    101944: stroke173
+    101946: stroke174
+    101948: stroke175
+    101950: stroke176
+    101952: stroke177
+    101954: stroke178
+    101956: stroke179
+    101958: stroke18
+    101960: stroke180
+    101962: stroke181
+    101964: stroke182
+    101966: stroke183
+    101968: stroke184
+    101970: stroke185
+    101972: stroke186
+    101974: stroke187
+    101976: stroke188
+    101978: stroke189
+    101980: stroke19
+    101982: stroke190
+    101984: stroke191
+    101986: stroke192
+    101988: stroke193
+    101990: stroke194
+    101992: stroke195
+    101994: stroke196
+    101996: stroke197
+    101998: stroke198
+    102000: stroke199
+    102002: stroke2
+    102004: stroke20
+    102006: stroke200
+    102008: stroke201
+    102010: stroke202
+    102012: stroke203
+    102014: stroke204
+    102016: stroke205
+    102018: stroke206
+    102020: stroke207
+    102022: stroke208
+    102024: stroke209
+    102026: stroke21
+    102028: stroke210
+    102030: stroke211
+    102032: stroke212
+    102034: stroke213
+    102036: stroke214
+    102038: stroke215
+    102040: stroke216
+    102042: stroke217
+    102044: stroke218
+    102046: stroke219
+    102048: stroke22
+    102050: stroke220
+    102052: stroke221
+    102054: stroke222
+    102056: stroke223
+    102058: stroke224
+    102060: stroke225
+    102062: stroke226
+    102064: stroke23
+    102066: stroke24
+    102068: stroke25
+    102070: stroke26
+    102072: stroke27
+    102074: stroke28
+    102076: stroke29
+    102078: stroke3
+    102080: stroke30
+    102082: stroke31
+    102084: stroke32
+    102086: stroke33
+    102088: stroke34
+    102090: stroke35
+    102092: stroke36
+    102094: stroke37
+    102096: stroke38
+    102098: stroke39
+    102100: stroke4
+    102102: stroke40
+    102104: stroke41
+    102106: stroke42
+    102108: stroke43
+    102110: stroke44
+    102112: stroke45
+    102114: stroke46
+    102116: stroke47
+    102118: stroke48
+    102120: stroke49
+    102122: stroke5
+    102124: stroke50
+    102126: stroke51
+    102128: stroke52
+    102130: stroke53
+    102132: stroke54
+    102134: stroke55
+    102136: stroke56
+    102138: stroke57
+    102140: stroke58
+    102142: stroke59
+    102144: stroke6
+    102146: stroke60
+    102148: stroke61
+    102150: stroke62
+    102152: stroke63
+    102154: stroke64
+    102156: stroke65
+    102158: stroke66
+    102160: stroke67
+    102162: stroke68
+    102164: stroke69
+    102166: stroke7
+    102168: stroke70
+    102170: stroke71
+    102172: stroke72
+    102174: stroke73
+    102176: stroke74
+    102178: stroke75
+    102180: stroke76
+    102182: stroke77
+    102184: stroke78
+    102186: stroke79
+    102188: stroke8
+    102190: stroke80
+    102192: stroke81
+    102194: stroke82
+    102196: stroke83
+    102198: stroke84
+    102200: stroke85
+    102202: stroke86
+    102204: stroke87
+    102206: stroke88
+    102208: stroke89
+    102210: stroke9
+    102212: stroke90
+    102214: stroke91
+    102216: stroke92
+    102218: stroke93
+    102220: stroke94
+    102222: stroke95
+    102224: stroke96
+    102226: stroke97
+    102228: stroke98
+    102230: stroke99
+    102232: strokeCrystals10
+    102234: strokeCrystals11
+    102236: strokeCrystals12
+    102238: strokeCrystals19
+    102240: strokeCrystals20
+    102242: strokeCrystals21
+    102244: strokeCrystals22
+    102246: strokeCrystals25
+    102248: strokeCrystals26
+    102250: strokes
+    102252: strokes 1
+    102254: strokes 2
+    102256: strokes 3
+    102258: subdToNurbsShape1
+    102260: subdToNurbsShape1_1
+    102262: topnurbsSquare1
+    102264: topnurbsSquare1 1
+    102266: topnurbsSquare1 10
+    102268: topnurbsSquare1 11
+    102270: topnurbsSquare1 12
+    102272: topnurbsSquare1 13
+    102274: topnurbsSquare1 14
+    102276: topnurbsSquare1 15
+    102278: topnurbsSquare1 16
+    102280: topnurbsSquare1 2
+    102282: topnurbsSquare1 3
+    102284: topnurbsSquare1 4
+    102286: topnurbsSquare1 5
+    102288: topnurbsSquare1 6
+    102290: topnurbsSquare1 7
+    102292: topnurbsSquare1 8
+    102294: topnurbsSquare1 9
+    102296: world_helper
+    400000: A1
+    400002: B1
+    400004: back
+    400006: bezier1
+    400008: bezier100
+    400010: bezier101
+    400012: bezier102
+    400014: bezier103
+    400016: bezier104
+    400018: bezier105
+    400020: bezier106
+    400022: bezier107
+    400024: bezier108
+    400026: bezier109
+    400028: bezier110
+    400030: bezier111
+    400032: bezier112
+    400034: bezier113
+    400036: bezier114
+    400038: bezier115
+    400040: bezier116
+    400042: bezier119
+    400044: bezier120
+    400046: bezier121
+    400048: bezier122
+    400050: bezier123
+    400052: bezier124
+    400054: bezier125
+    400056: bezier126
+    400058: bezier129
+    400060: bezier130
+    400062: bezier131
+    400064: bezier133
+    400066: bezier134
+    400068: bezier135
+    400070: bezier136
+    400072: bezier137
+    400074: bezier139
+    400076: bezier140
+    400078: bezier141
+    400080: bezier149
+    400082: bezier150
+    400084: bezier151
+    400086: bezier152
+    400088: bezier153
+    400090: bezier155
+    400092: bezier156
+    400094: bezier158
+    400096: bezier160
+    400098: bezier161
+    400100: bezier161 1
+    400102: bezier161 2
+    400104: bezier162
+    400106: bezier163
+    400108: bezier164
+    400110: bezier164 1
+    400112: bezier165
+    400114: bezier165 1
+    400116: bezier165 2
+    400118: bezier165 3
+    400120: bezier166
+    400122: bezier166 1
+    400124: bezier166 2
+    400126: bezier166 3
+    400128: bezier167
+    400130: bezier168
+    400132: bezier169
+    400134: bezier170
+    400136: bezier171
+    400138: bezier172
+    400140: bezier173
+    400142: bezier174
+    400144: bezier175
+    400146: bezier176
+    400148: bezier177
+    400150: bezier179
+    400152: bezier180
+    400154: bezier180 1
+    400156: bezier181
+    400158: bezier181 1
+    400160: bezier182
+    400162: bezier182 1
+    400164: bezier182 2
+    400166: bezier183
+    400168: bezier183 1
+    400170: bezier183 2
+    400172: bezier184
+    400174: bezier184 1
+    400176: bezier185
+    400178: bezier185 1
+    400180: bezier2
+    400182: bezier204
+    400184: bezier205
+    400186: bezier205 1
+    400188: bezier210
+    400190: bezier211
+    400192: bezier212
+    400194: bezier213
+    400196: bezier214
+    400198: bezier215
+    400200: bezier216
+    400202: bezier217
+    400204: bezier218
+    400206: bezier219
+    400208: bezier220
+    400210: bezier221
+    400212: bezier222
+    400214: bezier223
+    400216: bezier224
+    400218: bezier225
+    400220: bezier226
+    400222: bezier227
+    400224: bezier228
+    400226: bezier229
+    400228: bezier230
+    400230: bezier231
+    400232: bezier232
+    400234: bezier233
+    400236: bezier234
+    400238: bezier235
+    400240: bezier236
+    400242: bezier237
+    400244: bezier244
+    400246: bezier245
+    400248: bezier246
+    400250: bezier247
+    400252: bezier248
+    400254: bezier249
+    400256: bezier250
+    400258: bezier251
+    400260: bezier252
+    400262: bezier252 1
+    400264: bezier252 2
+    400266: bezier252 3
+    400268: bezier253
+    400270: bezier253 1
+    400272: bezier253 2
+    400274: bezier253 3
+    400276: bezier254
+    400278: bezier254 1
+    400280: bezier254 2
+    400282: bezier254 3
+    400284: bezier255
+    400286: bezier255 1
+    400288: bezier255 2
+    400290: bezier255 3
+    400292: bezier256
+    400294: bezier256 1
+    400296: bezier256 2
+    400298: bezier256 3
+    400300: bezier257
+    400302: bezier257 1
+    400304: bezier257 2
+    400306: bezier257 3
+    400308: bezier258
+    400310: bezier258 1
+    400312: bezier258 2
+    400314: bezier258 3
+    400316: bezier259
+    400318: bezier259 1
+    400320: bezier259 2
+    400322: bezier259 3
+    400324: bezier260
+    400326: bezier260 1
+    400328: bezier260 2
+    400330: bezier260 3
+    400332: bezier261
+    400334: bezier261 1
+    400336: bezier261 2
+    400338: bezier261 3
+    400340: bezier262
+    400342: bezier262 1
+    400344: bezier262 2
+    400346: bezier262 3
+    400348: bezier263
+    400350: bezier263 1
+    400352: bezier263 2
+    400354: bezier263 3
+    400356: bezier264
+    400358: bezier264 1
+    400360: bezier264 2
+    400362: bezier264 3
+    400364: bezier265
+    400366: bezier265 1
+    400368: bezier265 2
+    400370: bezier265 3
+    400372: bezier267
+    400374: bezier268
+    400376: bezier269
+    400378: bezier280
+    400380: bezier282
+    400382: bezier284
+    400384: bezier286
+    400386: bezier288
+    400388: bezier290
+    400390: bezier293
+    400392: bezier294
+    400394: bezier295
+    400396: bezier296
+    400398: bezier297
+    400400: bezier298
+    400402: bezier299
+    400404: bezier3
+    400406: bezier300
+    400408: bezier301
+    400410: bezier309
+    400412: bezier310
+    400414: bezier311
+    400416: bezier312
+    400418: bezier313
+    400420: bezier314
+    400422: bezier315
+    400424: bezier316
+    400426: bezier317
+    400428: bezier318
+    400430: bezier319
+    400432: bezier322
+    400434: bezier323
+    400436: bezier326
+    400438: bezier327
+    400440: bezier328
+    400442: bezier329
+    400444: bezier330
+    400446: bezier331
+    400448: bezier332
+    400450: bezier333
+    400452: bezier347
+    400454: bezier348
+    400456: bezier349
+    400458: bezier350
+    400460: bezier351
+    400462: bezier352
+    400464: bezier353
+    400466: bezier354
+    400468: bezier356
+    400470: bezier357
+    400472: bezier358
+    400474: bezier359
+    400476: bezier360
+    400478: bezier361
+    400480: bezier362
+    400482: bezier363
+    400484: bezier364
+    400486: bezier365
+    400488: bezier366
+    400490: bezier367
+    400492: bezier368
+    400494: bezier369
+    400496: bezier37
+    400498: bezier370
+    400500: bezier371
+    400502: bezier372
+    400504: bezier373
+    400506: bezier374
+    400508: bezier375
+    400510: bezier376
+    400512: bezier377
+    400514: bezier378
+    400516: bezier379
+    400518: bezier38
+    400520: bezier380
+    400522: bezier381
+    400524: bezier382
+    400526: bezier383
+    400528: bezier384
+    400530: bezier384 1
+    400532: bezier385
+    400534: bezier385 1
+    400536: bezier386
+    400538: bezier387
+    400540: bezier39
+    400542: bezier4
+    400544: bezier40
+    400546: bezier41
+    400548: bezier42
+    400550: bezier43
+    400552: bezier44
+    400554: bezier45
+    400556: bezier46
+    400558: bezier47
+    400560: bezier48
+    400562: bezier49
+    400564: bezier50
+    400566: bezier70
+    400568: bezier76
+    400570: bezier77
+    400572: bezier78
+    400574: bezier79
+    400576: bezier80
+    400578: bezier81
+    400580: bezier82
+    400582: bezier83
+    400584: bezier84
+    400586: bezier85
+    400588: bezier86
+    400590: bezier87
+    400592: bezier88
+    400594: bezier89
+    400596: bezier92
+    400598: bezier93
+    400600: bezier94
+    400602: bezier95
+    400604: bezier96
+    400606: bezier97
+    400608: bezier98
+    400610: bezier99
+    400612: bottom
+    400614: bottomnurbsSquare1
+    400616: bottomnurbsSquare1 1
+    400618: bottomnurbsSquare1 10
+    400620: bottomnurbsSquare1 11
+    400622: bottomnurbsSquare1 12
+    400624: bottomnurbsSquare1 13
+    400626: bottomnurbsSquare1 14
+    400628: bottomnurbsSquare1 15
+    400630: bottomnurbsSquare1 16
+    400632: bottomnurbsSquare1 2
+    400634: bottomnurbsSquare1 3
+    400636: bottomnurbsSquare1 4
+    400638: bottomnurbsSquare1 5
+    400640: bottomnurbsSquare1 6
+    400642: bottomnurbsSquare1 7
+    400644: bottomnurbsSquare1 8
+    400646: bottomnurbsSquare1 9
+    400648: brush162Main
+    400650: brush162Main1
+    400652: brush162Main10
+    400654: brush162Main11
+    400656: brush162Main12
+    400658: brush162Main13
+    400660: brush162Main14
+    400662: brush162Main15
+    400664: brush162Main16
+    400666: brush162Main17
+    400668: brush162Main18
+    400670: brush162Main19
+    400672: brush162Main2
+    400674: brush162Main20
+    400676: brush162Main21
+    400678: brush162Main22
+    400680: brush162Main23
+    400682: brush162Main24
+    400684: brush162Main25
+    400686: brush162Main26
+    400688: brush162Main27
+    400690: brush162Main28
+    400692: brush162Main29
+    400694: brush162Main3
+    400696: brush162Main30
+    400698: brush162Main31
+    400700: brush162Main32
+    400702: brush162Main33
+    400704: brush162Main34
+    400706: brush162Main35
+    400708: brush162Main36
+    400710: brush162Main37
+    400712: brush162Main38
+    400714: brush162Main39
+    400716: brush162Main4
+    400718: brush162Main40
+    400720: brush162Main41
+    400722: brush162Main42
+    400724: brush162Main43
+    400726: brush162Main44
+    400728: brush162Main45
+    400730: brush162Main46
+    400732: brush162Main47
+    400734: brush162Main48
+    400736: brush162Main49
+    400738: brush162Main5
+    400740: brush162Main50
+    400742: brush162Main51
+    400744: brush162Main52
+    400746: brush162Main53
+    400748: brush162Main54
+    400750: brush162Main55
+    400752: brush162Main56
+    400754: brush162Main57
+    400756: brush162Main58
+    400758: brush162Main59
+    400760: brush162Main6
+    400762: brush162Main60
+    400764: brush162Main61
+    400766: brush162Main62
+    400768: brush162Main63
+    400770: brush162Main64
+    400772: brush162Main65
+    400774: brush162Main66
+    400776: brush162Main67
+    400778: brush162Main68
+    400780: brush162Main7
+    400782: brush162Main8
+    400784: brush162Main9
+    400786: brush64Main
+    400788: brush64Main1
+    400790: brush64Main10
+    400792: brush64Main11
+    400794: brush64Main12
+    400796: brush64Main13
+    400798: brush64Main14
+    400800: brush64Main15
+    400802: brush64Main16
+    400804: brush64Main17
+    400806: brush64Main18
+    400808: brush64Main19
+    400810: brush64Main2
+    400812: brush64Main20
+    400814: brush64Main21
+    400816: brush64Main22
+    400818: brush64Main23
+    400820: brush64Main24
+    400822: brush64Main25
+    400824: brush64Main26
+    400826: brush64Main27
+    400828: brush64Main28
+    400830: brush64Main29
+    400832: brush64Main3
+    400834: brush64Main30
+    400836: brush64Main31
+    400838: brush64Main32
+    400840: brush64Main33
+    400842: brush64Main34
+    400844: brush64Main35
+    400846: brush64Main36
+    400848: brush64Main37
+    400850: brush64Main38
+    400852: brush64Main39
+    400854: brush64Main4
+    400856: brush64Main40
+    400858: brush64Main41
+    400860: brush64Main42
+    400862: brush64Main43
+    400864: brush64Main44
+    400866: brush64Main45
+    400868: brush64Main46
+    400870: brush64Main47
+    400872: brush64Main48
+    400874: brush64Main49
+    400876: brush64Main5
+    400878: brush64Main50
+    400880: brush64Main51
+    400882: brush64Main52
+    400884: brush64Main53
+    400886: brush64Main54
+    400888: brush64Main55
+    400890: brush64Main56
+    400892: brush64Main57
+    400894: brush64Main58
+    400896: brush64Main59
+    400898: brush64Main6
+    400900: brush64Main60
+    400902: brush64Main61
+    400904: brush64Main62
+    400906: brush64Main7
+    400908: brush64Main8
+    400910: brush64Main9
+    400912: brush93Main
+    400914: brush93Main1
+    400916: brush93Main10
+    400918: brush93Main11
+    400920: brush93Main12
+    400922: brush93Main13
+    400924: brush93Main14
+    400926: brush93Main15
+    400928: brush93Main16
+    400930: brush93Main17
+    400932: brush93Main18
+    400934: brush93Main19
+    400936: brush93Main2
+    400938: brush93Main20
+    400940: brush93Main21
+    400942: brush93Main22
+    400944: brush93Main23
+    400946: brush93Main24
+    400948: brush93Main25
+    400950: brush93Main26
+    400952: brush93Main27
+    400954: brush93Main28
+    400956: brush93Main3
+    400958: brush93Main4
+    400960: brush93Main5
+    400962: brush93Main6
+    400964: brush93Main7
+    400966: brush93Main8
+    400968: brush93Main9
+    400970: C1
+    400972: C2
+    400974: cactus13Main
+    400976: cactus13Main 1
+    400978: cactus13Main 2
+    400980: cactus13Main 3
+    400982: cactus13Main 4
+    400984: cactus13Main 5
+    400986: cactus13Main 6
+    400988: cactus13Main 7
+    400990: cactus13Main 8
+    400992: cactus13Main 9
+    400994: cactus13MeshGroup10
+    400996: cactus13MeshGroup11
+    400998: cactus13MeshGroup12
+    401000: cactus13MeshGroup13
+    401002: cactus13MeshGroup14
+    401004: cactus13MeshGroup15
+    401006: cactus13MeshGroup16
+    401008: cactus13MeshGroup17
+    401010: cactus13MeshGroup8
+    401012: cactus13MeshGroup9
+    401014: cam_rotation
+    401016: center
+    401018: curve10
+    401020: curve10detachedCurve2
+    401022: curve10detachedCurve2 1
+    401024: curve10detachedCurve4
+    401026: curve12
+    401028: curve12detachedCurve2
+    401030: curve14
+    401032: curve16
+    401034: curve18
+    401036: curve20
+    401038: curve21
+    401040: curve21detachedCurve2
+    401042: curve21detachedCurve2 1
+    401044: curve21detachedCurve4
+    401046: curve23
+    401048: curve25
+    401050: curve27
+    401052: curve29
+    401054: curve31
+    401056: curve33
+    401058: curve35
+    401060: curve37
+    401062: curve39
+    401064: curve4
+    401066: curve41
+    401068: curve43
+    401070: curve45
+    401072: curve47
+    401074: curve49
+    401076: curve4detachedCurve2
+    401078: curve4detachedCurve2 1
+    401080: curve4detachedCurve4
+    401082: curve51
+    401084: curve53
+    401086: curve55
+    401088: curve57
+    401090: curve59
+    401092: curve6
+    401094: curve61
+    401096: curve63
+    401098: curve65
+    401100: curve66
+    401102: curve67
+    401104: curve68
+    401106: curve69
+    401108: curve6detachedCurve2
+    401110: curve6detachedCurve2 1
+    401112: curve6detachedCurve4
+    401114: curve70
+    401116: curve71
+    401118: curve72
+    401120: curve73
+    401122: curve74
+    401124: curve75
+    401126: curve78
+    401128: curve8
+    401130: curve80
+    401132: curve82
+    401134: curve84
+    401136: curve86
+    401138: curve88
+    401140: curve8detachedCurve2
+    401142: curve8detachedCurve2 1
+    401144: curve8detachedCurve4
+    401146: curve90
+    401148: curve92
+    401150: curve94
+    401152: curve95
+    401154: curves
+    401156: curves 1
+    401158: curves 2
+    401160: curves 3
+    401162: //RootNode
+    401164: D1
+    401166: distant_room
+    401168: distant_room1
+    401170: duplicatedCurve1
+    401172: duplicatedCurve10
+    401174: duplicatedCurve2
+    401176: duplicatedCurve3
+    401178: duplicatedCurve4
+    401180: duplicatedCurve5
+    401182: duplicatedCurve6
+    401184: duplicatedCurve7
+    401186: duplicatedCurve8
+    401188: duplicatedCurve9
+    401190: E1
+    401192: E2
+    401194: flower_backup
+    401196: gold15Main
+    401198: gold15Main1
+    401200: gold15Main10
+    401202: gold15Main11
+    401204: gold15Main12
+    401206: gold15Main13
+    401208: gold15Main14
+    401210: gold15Main15
+    401212: gold15Main16
+    401214: gold15Main17
+    401216: gold15Main18
+    401218: gold15Main19
+    401220: gold15Main2
+    401222: gold15Main20
+    401224: gold15Main21
+    401226: gold15Main22
+    401228: gold15Main23
+    401230: gold15Main24
+    401232: gold15Main25
+    401234: gold15Main26
+    401236: gold15Main27
+    401238: gold15Main28
+    401240: gold15Main29
+    401242: gold15Main3
+    401244: gold15Main30
+    401246: gold15Main31
+    401248: gold15Main32
+    401250: gold15Main33
+    401252: gold15Main34
+    401254: gold15Main35
+    401256: gold15Main36
+    401258: gold15Main37
+    401260: gold15Main38
+    401262: gold15Main39
+    401264: gold15Main4
+    401266: gold15Main40
+    401268: gold15Main41
+    401270: gold15Main42
+    401272: gold15Main43
+    401274: gold15Main44
+    401276: gold15Main45
+    401278: gold15Main46
+    401280: gold15Main47
+    401282: gold15Main48
+    401284: gold15Main49
+    401286: gold15Main5
+    401288: gold15Main50
+    401290: gold15Main51
+    401292: gold15Main52
+    401294: gold15Main53
+    401296: gold15Main6
+    401298: gold15Main7
+    401300: gold15Main8
+    401302: gold15Main9
+    401304: gridwall1
+    401306: gridwall2
+    401308: gridwall3
+    401310: group
+    401312: group168
+    401314: group169
+    401316: group172
+    401318: group175
+    401320: group177
+    401322: group181
+    401324: group182
+    401326: group183
+    401328: group184
+    401330: group185
+    401332: group186
+    401334: group187
+    401336: group188
+    401338: group189
+    401340: group190
+    401342: group191
+    401344: group192
+    401346: group193
+    401348: group194
+    401350: group195
+    401352: group196
+    401354: group197
+    401356: group199
+    401358: group2
+    401360: group200
+    401362: group201
+    401364: group202
+    401366: group203
+    401368: group4
+    401370: group60
+    401372: ladder
+    401374: left
+    401376: leftnurbsSquare1
+    401378: leftnurbsSquare1 1
+    401380: leftnurbsSquare1 10
+    401382: leftnurbsSquare1 11
+    401384: leftnurbsSquare1 12
+    401386: leftnurbsSquare1 13
+    401388: leftnurbsSquare1 14
+    401390: leftnurbsSquare1 15
+    401392: leftnurbsSquare1 16
+    401394: leftnurbsSquare1 2
+    401396: leftnurbsSquare1 3
+    401398: leftnurbsSquare1 4
+    401400: leftnurbsSquare1 5
+    401402: leftnurbsSquare1 6
+    401404: leftnurbsSquare1 7
+    401406: leftnurbsSquare1 8
+    401408: leftnurbsSquare1 9
+    401410: locator1
+    401412: locator2
+    401414: mesh
+    401416: meshes
+    401418: meshes 1
+    401420: meshes 2
+    401422: nurbsCircle1
+    401424: nurbsCircle1 1
+    401426: nurbsCircle1 2
+    401428: nurbsCircle18
+    401430: nurbsCircle19
+    401432: nurbsCircle2
+    401434: nurbsCircle2 1
+    401436: nurbsCircle2 2
+    401438: nurbsCircle20
+    401440: nurbsCircle5
+    401442: nurbsCircle6
+    401444: nurbsCircle7
+    401446: nurbsCircle8
+    401448: nurbsSquare1
+    401450: nurbsSquare10
+    401452: nurbsSquare11
+    401454: nurbsSquare12
+    401456: nurbsSquare13
+    401458: nurbsSquare14
+    401460: nurbsSquare15
+    401462: nurbsSquare16
+    401464: nurbsSquare17
+    401466: nurbsSquare2
+    401468: nurbsSquare3
+    401470: nurbsSquare4
+    401472: nurbsSquare5
+    401474: nurbsSquare6
+    401476: nurbsSquare7
+    401478: nurbsSquare8
+    401480: nurbsSquare9
+    401482: pasted__CycleRoom
+    401484: pasted__CycleRoom1
+    401486: pasted__CycleRoom3
+    401488: pasted__CycleRoom4
+    401490: pasted__group61
+    401492: pasted__group61 1
+    401494: pasted__group61 2
+    401496: pasted__group61 3
+    401498: pasted__pPipe1
+    401500: pasted__pPipe1 1
+    401502: pasted__pPipe1 2
+    401504: pasted__pPipe1 3
+    401506: pasted__pPipe14
+    401508: pasted__pPipe16
+    401510: pasted__pPipe16 1
+    401512: pasted__pPipe16 2
+    401514: pasted__pPipe16 3
+    401516: pasted__pPipe17
+    401518: pasted__pPipe17 1
+    401520: pasted__pPipe17 2
+    401522: pasted__pPipe17 3
+    401524: pasted__pPipe18
+    401526: pasted__pPipe18 1
+    401528: pasted__pPipe18 2
+    401530: pasted__pPipe18 3
+    401532: pasted__pPipe19
+    401534: pasted__pPipe19 1
+    401536: pasted__pPipe19 2
+    401538: pasted__pPipe19 3
+    401540: pasted__pPipe20
+    401542: pasted__pPipe20 1
+    401544: pasted__pPipe20 2
+    401546: pasted__pPipe20 3
+    401548: pasted__pPipe21
+    401550: pasted__pPipe21 1
+    401552: pasted__pPipe21 2
+    401554: pasted__pPipe21 3
+    401556: pasted__pPipe22
+    401558: pasted__pPipe22 1
+    401560: pasted__pPipe22 2
+    401562: pasted__pPipe22 3
+    401564: pasted__pPipe23
+    401566: pasted__pPipe23 1
+    401568: pasted__pPipe23 2
+    401570: pasted__pPipe23 3
+    401572: pasted__pPipe24
+    401574: pasted__pPipe24 1
+    401576: pasted__pPipe24 2
+    401578: pasted__pPipe24 3
+    401580: pasted__pPipe25
+    401582: pasted__pPipe25 1
+    401584: pasted__pPipe25 2
+    401586: pasted__pPipe25 3
+    401588: pasted__pPipe26
+    401590: pasted__pPipe26 1
+    401592: pasted__pPipe26 2
+    401594: pasted__pPipe26 3
+    401596: pasted__pPipe27
+    401598: pasted__pPipe27 1
+    401600: pasted__pPipe27 2
+    401602: pasted__pPipe27 3
+    401604: pasted__pPipe28
+    401606: pasted__pPipe28 1
+    401608: pasted__pPipe28 2
+    401610: pasted__pPipe28 3
+    401612: pasted__pPipe29
+    401614: pasted__pPipe29 1
+    401616: pasted__pPipe29 2
+    401618: pasted__pPipe29 3
+    401620: pasted__pPipe30
+    401622: pasted__pPipe30 1
+    401624: pasted__pPipe30 2
+    401626: pasted__pPipe30 3
+    401628: pasted__pPipe31
+    401630: pasted__pPipe31 1
+    401632: pasted__pPipe31 2
+    401634: pasted__pPipe31 3
+    401636: pasted__pPipe32
+    401638: pasted__pPipe32 1
+    401640: pasted__pPipe32 2
+    401642: pasted__pPipe32 3
+    401644: pasted__pPipe33
+    401646: pasted__pPipe33 1
+    401648: pasted__pPipe33 2
+    401650: pasted__pPipe33 3
+    401652: pasted__pPipe34
+    401654: pasted__pPipe34 1
+    401656: pasted__pPipe34 2
+    401658: pasted__pPipe34 3
+    401660: pasted__Room_Rotation
+    401662: Patterns
+    401664: pCube139
+    401666: pCube140
+    401668: pCube141
+    401670: pCube152
+    401672: pCube153
+    401674: pCube154
+    401676: pCylinder1
+    401678: persp2
+    401680: polySurface2
+    401682: polyToSubd1
+    401684: pPipe10
+    401686: pPipe12
+    401688: pPipe13
+    401690: pPipe2
+    401692: pPipe3
+    401694: pPipe4
+    401696: pPipe5
+    401698: pPipe6
+    401700: pPipe7
+    401702: pPipe8
+    401704: pPipe9
+    401706: pTorus1
+    401708: pTorus10
+    401710: pTorus11
+    401712: pTorus12
+    401714: pTorus13
+    401716: pTorus14
+    401718: pTorus2
+    401720: pTorus3
+    401722: pTorus4
+    401724: pTorus5
+    401726: pTorus6
+    401728: pTorus7
+    401730: pTorus8
+    401732: pTorus9
+    401734: radius
+    401736: radius_1
+    401738: rightnurbsSquare1
+    401740: rightnurbsSquare1 1
+    401742: rightnurbsSquare1 10
+    401744: rightnurbsSquare1 11
+    401746: rightnurbsSquare1 12
+    401748: rightnurbsSquare1 13
+    401750: rightnurbsSquare1 14
+    401752: rightnurbsSquare1 15
+    401754: rightnurbsSquare1 16
+    401756: rightnurbsSquare1 2
+    401758: rightnurbsSquare1 3
+    401760: rightnurbsSquare1 4
+    401762: rightnurbsSquare1 5
+    401764: rightnurbsSquare1 6
+    401766: rightnurbsSquare1 7
+    401768: rightnurbsSquare1 8
+    401770: rightnurbsSquare1 9
+    401772: ring_globe
+    401774: Room_Rotation
+    401776: sky_dome
+    401778: stereoCamera
+    401780: stroke
+    401782: stroke1
+    401784: stroke100
+    401786: stroke101
+    401788: stroke102
+    401790: stroke103
+    401792: stroke104
+    401794: stroke105
+    401796: stroke106
+    401798: stroke107
+    401800: stroke108
+    401802: stroke109
+    401804: stroke11
+    401806: stroke110
+    401808: stroke111
+    401810: stroke112
+    401812: stroke113
+    401814: stroke114
+    401816: stroke115
+    401818: stroke116
+    401820: stroke117
+    401822: stroke118
+    401824: stroke119
+    401826: stroke12
+    401828: stroke120
+    401830: stroke121
+    401832: stroke122
+    401834: stroke123
+    401836: stroke124
+    401838: stroke125
+    401840: stroke126
+    401842: stroke127
+    401844: stroke128
+    401846: stroke129
+    401848: stroke13
+    401850: stroke130
+    401852: stroke131
+    401854: stroke132
+    401856: stroke133
+    401858: stroke134
+    401860: stroke135
+    401862: stroke136
+    401864: stroke137
+    401866: stroke138
+    401868: stroke139
+    401870: stroke14
+    401872: stroke140
+    401874: stroke141
+    401876: stroke142
+    401878: stroke143
+    401880: stroke144
+    401882: stroke145
+    401884: stroke146
+    401886: stroke147
+    401888: stroke148
+    401890: stroke149
+    401892: stroke15
+    401894: stroke150
+    401896: stroke151
+    401898: stroke152
+    401900: stroke153
+    401902: stroke154
+    401904: stroke155
+    401906: stroke156
+    401908: stroke157
+    401910: stroke158
+    401912: stroke159
+    401914: stroke16
+    401916: stroke160
+    401918: stroke161
+    401920: stroke162
+    401922: stroke163
+    401924: stroke164
+    401926: stroke165
+    401928: stroke166
+    401930: stroke167
+    401932: stroke168
+    401934: stroke169
+    401936: stroke17
+    401938: stroke170
+    401940: stroke171
+    401942: stroke172
+    401944: stroke173
+    401946: stroke174
+    401948: stroke175
+    401950: stroke176
+    401952: stroke177
+    401954: stroke178
+    401956: stroke179
+    401958: stroke18
+    401960: stroke180
+    401962: stroke181
+    401964: stroke182
+    401966: stroke183
+    401968: stroke184
+    401970: stroke185
+    401972: stroke186
+    401974: stroke187
+    401976: stroke188
+    401978: stroke189
+    401980: stroke19
+    401982: stroke190
+    401984: stroke191
+    401986: stroke192
+    401988: stroke193
+    401990: stroke194
+    401992: stroke195
+    401994: stroke196
+    401996: stroke197
+    401998: stroke198
+    402000: stroke199
+    402002: stroke2
+    402004: stroke20
+    402006: stroke200
+    402008: stroke201
+    402010: stroke202
+    402012: stroke203
+    402014: stroke204
+    402016: stroke205
+    402018: stroke206
+    402020: stroke207
+    402022: stroke208
+    402024: stroke209
+    402026: stroke21
+    402028: stroke210
+    402030: stroke211
+    402032: stroke212
+    402034: stroke213
+    402036: stroke214
+    402038: stroke215
+    402040: stroke216
+    402042: stroke217
+    402044: stroke218
+    402046: stroke219
+    402048: stroke22
+    402050: stroke220
+    402052: stroke221
+    402054: stroke222
+    402056: stroke223
+    402058: stroke224
+    402060: stroke225
+    402062: stroke226
+    402064: stroke23
+    402066: stroke24
+    402068: stroke25
+    402070: stroke26
+    402072: stroke27
+    402074: stroke28
+    402076: stroke29
+    402078: stroke3
+    402080: stroke30
+    402082: stroke31
+    402084: stroke32
+    402086: stroke33
+    402088: stroke34
+    402090: stroke35
+    402092: stroke36
+    402094: stroke37
+    402096: stroke38
+    402098: stroke39
+    402100: stroke4
+    402102: stroke40
+    402104: stroke41
+    402106: stroke42
+    402108: stroke43
+    402110: stroke44
+    402112: stroke45
+    402114: stroke46
+    402116: stroke47
+    402118: stroke48
+    402120: stroke49
+    402122: stroke5
+    402124: stroke50
+    402126: stroke51
+    402128: stroke52
+    402130: stroke53
+    402132: stroke54
+    402134: stroke55
+    402136: stroke56
+    402138: stroke57
+    402140: stroke58
+    402142: stroke59
+    402144: stroke6
+    402146: stroke60
+    402148: stroke61
+    402150: stroke62
+    402152: stroke63
+    402154: stroke64
+    402156: stroke65
+    402158: stroke66
+    402160: stroke67
+    402162: stroke68
+    402164: stroke69
+    402166: stroke7
+    402168: stroke70
+    402170: stroke71
+    402172: stroke72
+    402174: stroke73
+    402176: stroke74
+    402178: stroke75
+    402180: stroke76
+    402182: stroke77
+    402184: stroke78
+    402186: stroke79
+    402188: stroke8
+    402190: stroke80
+    402192: stroke81
+    402194: stroke82
+    402196: stroke83
+    402198: stroke84
+    402200: stroke85
+    402202: stroke86
+    402204: stroke87
+    402206: stroke88
+    402208: stroke89
+    402210: stroke9
+    402212: stroke90
+    402214: stroke91
+    402216: stroke92
+    402218: stroke93
+    402220: stroke94
+    402222: stroke95
+    402224: stroke96
+    402226: stroke97
+    402228: stroke98
+    402230: stroke99
+    402232: strokeCrystals10
+    402234: strokeCrystals11
+    402236: strokeCrystals12
+    402238: strokeCrystals19
+    402240: strokeCrystals20
+    402242: strokeCrystals21
+    402244: strokeCrystals22
+    402246: strokeCrystals25
+    402248: strokeCrystals26
+    402250: strokes
+    402252: strokes 1
+    402254: strokes 2
+    402256: strokes 3
+    402258: subdToNurbsShape1
+    402260: subdToNurbsShape1_1
+    402262: topnurbsSquare1
+    402264: topnurbsSquare1 1
+    402266: topnurbsSquare1 10
+    402268: topnurbsSquare1 11
+    402270: topnurbsSquare1 12
+    402272: topnurbsSquare1 13
+    402274: topnurbsSquare1 14
+    402276: topnurbsSquare1 15
+    402278: topnurbsSquare1 16
+    402280: topnurbsSquare1 2
+    402282: topnurbsSquare1 3
+    402284: topnurbsSquare1 4
+    402286: topnurbsSquare1 5
+    402288: topnurbsSquare1 6
+    402290: topnurbsSquare1 7
+    402292: topnurbsSquare1 8
+    402294: topnurbsSquare1 9
+    402296: world_helper
+    2300000: brush162Main
+    2300002: brush162Main1
+    2300004: brush162Main10
+    2300006: brush162Main11
+    2300008: brush162Main12
+    2300010: brush162Main13
+    2300012: brush162Main14
+    2300014: brush162Main15
+    2300016: brush162Main16
+    2300018: brush162Main17
+    2300020: brush162Main18
+    2300022: brush162Main19
+    2300024: brush162Main2
+    2300026: brush162Main20
+    2300028: brush162Main21
+    2300030: brush162Main22
+    2300032: brush162Main23
+    2300034: brush162Main24
+    2300036: brush162Main25
+    2300038: brush162Main26
+    2300040: brush162Main27
+    2300042: brush162Main28
+    2300044: brush162Main29
+    2300046: brush162Main3
+    2300048: brush162Main30
+    2300050: brush162Main31
+    2300052: brush162Main32
+    2300054: brush162Main33
+    2300056: brush162Main34
+    2300058: brush162Main35
+    2300060: brush162Main36
+    2300062: brush162Main37
+    2300064: brush162Main38
+    2300066: brush162Main39
+    2300068: brush162Main4
+    2300070: brush162Main40
+    2300072: brush162Main41
+    2300074: brush162Main42
+    2300076: brush162Main43
+    2300078: brush162Main44
+    2300080: brush162Main45
+    2300082: brush162Main46
+    2300084: brush162Main47
+    2300086: brush162Main48
+    2300088: brush162Main49
+    2300090: brush162Main5
+    2300092: brush162Main50
+    2300094: brush162Main51
+    2300096: brush162Main52
+    2300098: brush162Main53
+    2300100: brush162Main54
+    2300102: brush162Main55
+    2300104: brush162Main56
+    2300106: brush162Main57
+    2300108: brush162Main58
+    2300110: brush162Main59
+    2300112: brush162Main6
+    2300114: brush162Main60
+    2300116: brush162Main61
+    2300118: brush162Main62
+    2300120: brush162Main63
+    2300122: brush162Main64
+    2300124: brush162Main65
+    2300126: brush162Main66
+    2300128: brush162Main67
+    2300130: brush162Main68
+    2300132: brush162Main7
+    2300134: brush162Main8
+    2300136: brush162Main9
+    2300138: brush64Main
+    2300140: brush64Main1
+    2300142: brush64Main10
+    2300144: brush64Main11
+    2300146: brush64Main12
+    2300148: brush64Main13
+    2300150: brush64Main14
+    2300152: brush64Main15
+    2300154: brush64Main16
+    2300156: brush64Main17
+    2300158: brush64Main18
+    2300160: brush64Main19
+    2300162: brush64Main2
+    2300164: brush64Main20
+    2300166: brush64Main21
+    2300168: brush64Main22
+    2300170: brush64Main23
+    2300172: brush64Main24
+    2300174: brush64Main25
+    2300176: brush64Main26
+    2300178: brush64Main27
+    2300180: brush64Main28
+    2300182: brush64Main29
+    2300184: brush64Main3
+    2300186: brush64Main30
+    2300188: brush64Main31
+    2300190: brush64Main32
+    2300192: brush64Main33
+    2300194: brush64Main34
+    2300196: brush64Main35
+    2300198: brush64Main36
+    2300200: brush64Main37
+    2300202: brush64Main38
+    2300204: brush64Main39
+    2300206: brush64Main4
+    2300208: brush64Main40
+    2300210: brush64Main41
+    2300212: brush64Main42
+    2300214: brush64Main43
+    2300216: brush64Main44
+    2300218: brush64Main45
+    2300220: brush64Main46
+    2300222: brush64Main47
+    2300224: brush64Main48
+    2300226: brush64Main49
+    2300228: brush64Main5
+    2300230: brush64Main50
+    2300232: brush64Main51
+    2300234: brush64Main52
+    2300236: brush64Main53
+    2300238: brush64Main54
+    2300240: brush64Main55
+    2300242: brush64Main56
+    2300244: brush64Main57
+    2300246: brush64Main58
+    2300248: brush64Main59
+    2300250: brush64Main6
+    2300252: brush64Main60
+    2300254: brush64Main61
+    2300256: brush64Main62
+    2300258: brush64Main7
+    2300260: brush64Main8
+    2300262: brush64Main9
+    2300264: brush93Main
+    2300266: brush93Main1
+    2300268: brush93Main10
+    2300270: brush93Main11
+    2300272: brush93Main12
+    2300274: brush93Main13
+    2300276: brush93Main14
+    2300278: brush93Main15
+    2300280: brush93Main16
+    2300282: brush93Main17
+    2300284: brush93Main18
+    2300286: brush93Main19
+    2300288: brush93Main2
+    2300290: brush93Main20
+    2300292: brush93Main21
+    2300294: brush93Main22
+    2300296: brush93Main23
+    2300298: brush93Main24
+    2300300: brush93Main25
+    2300302: brush93Main26
+    2300304: brush93Main27
+    2300306: brush93Main28
+    2300308: brush93Main3
+    2300310: brush93Main4
+    2300312: brush93Main5
+    2300314: brush93Main6
+    2300316: brush93Main7
+    2300318: brush93Main8
+    2300320: brush93Main9
+    2300322: cactus13Main
+    2300324: cactus13Main 1
+    2300326: cactus13Main 2
+    2300328: cactus13Main 3
+    2300330: cactus13Main 4
+    2300332: cactus13Main 5
+    2300334: cactus13Main 6
+    2300336: cactus13Main 7
+    2300338: cactus13Main 8
+    2300340: cactus13Main 9
+    2300342: gold15Main
+    2300344: gold15Main1
+    2300346: gold15Main10
+    2300348: gold15Main11
+    2300350: gold15Main12
+    2300352: gold15Main13
+    2300354: gold15Main14
+    2300356: gold15Main15
+    2300358: gold15Main16
+    2300360: gold15Main17
+    2300362: gold15Main18
+    2300364: gold15Main19
+    2300366: gold15Main2
+    2300368: gold15Main20
+    2300370: gold15Main21
+    2300372: gold15Main22
+    2300374: gold15Main23
+    2300376: gold15Main24
+    2300378: gold15Main25
+    2300380: gold15Main26
+    2300382: gold15Main27
+    2300384: gold15Main28
+    2300386: gold15Main29
+    2300388: gold15Main3
+    2300390: gold15Main30
+    2300392: gold15Main31
+    2300394: gold15Main32
+    2300396: gold15Main33
+    2300398: gold15Main34
+    2300400: gold15Main35
+    2300402: gold15Main36
+    2300404: gold15Main37
+    2300406: gold15Main38
+    2300408: gold15Main39
+    2300410: gold15Main4
+    2300412: gold15Main40
+    2300414: gold15Main41
+    2300416: gold15Main42
+    2300418: gold15Main43
+    2300420: gold15Main44
+    2300422: gold15Main45
+    2300424: gold15Main46
+    2300426: gold15Main47
+    2300428: gold15Main48
+    2300430: gold15Main49
+    2300432: gold15Main5
+    2300434: gold15Main50
+    2300436: gold15Main51
+    2300438: gold15Main52
+    2300440: gold15Main53
+    2300442: gold15Main6
+    2300444: gold15Main7
+    2300446: gold15Main8
+    2300448: gold15Main9
+    2300450: pasted__pPipe1
+    2300452: pasted__pPipe1 1
+    2300454: pasted__pPipe1 2
+    2300456: pasted__pPipe1 3
+    2300458: pasted__pPipe14
+    2300460: pasted__pPipe16
+    2300462: pasted__pPipe16 1
+    2300464: pasted__pPipe16 2
+    2300466: pasted__pPipe16 3
+    2300468: pasted__pPipe17
+    2300470: pasted__pPipe17 1
+    2300472: pasted__pPipe17 2
+    2300474: pasted__pPipe17 3
+    2300476: pasted__pPipe18
+    2300478: pasted__pPipe18 1
+    2300480: pasted__pPipe18 2
+    2300482: pasted__pPipe18 3
+    2300484: pasted__pPipe19
+    2300486: pasted__pPipe19 1
+    2300488: pasted__pPipe19 2
+    2300490: pasted__pPipe19 3
+    2300492: pasted__pPipe20
+    2300494: pasted__pPipe20 1
+    2300496: pasted__pPipe20 2
+    2300498: pasted__pPipe20 3
+    2300500: pasted__pPipe21
+    2300502: pasted__pPipe21 1
+    2300504: pasted__pPipe21 2
+    2300506: pasted__pPipe21 3
+    2300508: pasted__pPipe22
+    2300510: pasted__pPipe22 1
+    2300512: pasted__pPipe22 2
+    2300514: pasted__pPipe22 3
+    2300516: pasted__pPipe23
+    2300518: pasted__pPipe23 1
+    2300520: pasted__pPipe23 2
+    2300522: pasted__pPipe23 3
+    2300524: pasted__pPipe24
+    2300526: pasted__pPipe24 1
+    2300528: pasted__pPipe24 2
+    2300530: pasted__pPipe24 3
+    2300532: pasted__pPipe25
+    2300534: pasted__pPipe25 1
+    2300536: pasted__pPipe25 2
+    2300538: pasted__pPipe25 3
+    2300540: pasted__pPipe26
+    2300542: pasted__pPipe26 1
+    2300544: pasted__pPipe26 2
+    2300546: pasted__pPipe26 3
+    2300548: pasted__pPipe27
+    2300550: pasted__pPipe27 1
+    2300552: pasted__pPipe27 2
+    2300554: pasted__pPipe27 3
+    2300556: pasted__pPipe28
+    2300558: pasted__pPipe28 1
+    2300560: pasted__pPipe28 2
+    2300562: pasted__pPipe28 3
+    2300564: pasted__pPipe29
+    2300566: pasted__pPipe29 1
+    2300568: pasted__pPipe29 2
+    2300570: pasted__pPipe29 3
+    2300572: pasted__pPipe30
+    2300574: pasted__pPipe30 1
+    2300576: pasted__pPipe30 2
+    2300578: pasted__pPipe30 3
+    2300580: pasted__pPipe31
+    2300582: pasted__pPipe31 1
+    2300584: pasted__pPipe31 2
+    2300586: pasted__pPipe31 3
+    2300588: pasted__pPipe32
+    2300590: pasted__pPipe32 1
+    2300592: pasted__pPipe32 2
+    2300594: pasted__pPipe32 3
+    2300596: pasted__pPipe33
+    2300598: pasted__pPipe33 1
+    2300600: pasted__pPipe33 2
+    2300602: pasted__pPipe33 3
+    2300604: pasted__pPipe34
+    2300606: pasted__pPipe34 1
+    2300608: pasted__pPipe34 2
+    2300610: pasted__pPipe34 3
+    2300612: pCube139
+    2300614: pCube140
+    2300616: pCube141
+    2300618: pCube152
+    2300620: pCube153
+    2300622: pCube154
+    2300624: pCylinder1
+    2300626: polySurface2
+    2300628: pPipe10
+    2300630: pPipe12
+    2300632: pPipe13
+    2300634: pPipe2
+    2300636: pPipe3
+    2300638: pPipe4
+    2300640: pPipe5
+    2300642: pPipe6
+    2300644: pPipe7
+    2300646: pPipe8
+    2300648: pPipe9
+    2300650: pTorus1
+    2300652: pTorus10
+    2300654: pTorus11
+    2300656: pTorus12
+    2300658: pTorus13
+    2300660: pTorus14
+    2300662: pTorus2
+    2300664: pTorus3
+    2300666: pTorus4
+    2300668: pTorus5
+    2300670: pTorus6
+    2300672: pTorus7
+    2300674: pTorus8
+    2300676: pTorus9
+    2300678: sky_dome
+    3300000: brush162Main
+    3300002: brush162Main1
+    3300004: brush162Main10
+    3300006: brush162Main11
+    3300008: brush162Main12
+    3300010: brush162Main13
+    3300012: brush162Main14
+    3300014: brush162Main15
+    3300016: brush162Main16
+    3300018: brush162Main17
+    3300020: brush162Main18
+    3300022: brush162Main19
+    3300024: brush162Main2
+    3300026: brush162Main20
+    3300028: brush162Main21
+    3300030: brush162Main22
+    3300032: brush162Main23
+    3300034: brush162Main24
+    3300036: brush162Main25
+    3300038: brush162Main26
+    3300040: brush162Main27
+    3300042: brush162Main28
+    3300044: brush162Main29
+    3300046: brush162Main3
+    3300048: brush162Main30
+    3300050: brush162Main31
+    3300052: brush162Main32
+    3300054: brush162Main33
+    3300056: brush162Main34
+    3300058: brush162Main35
+    3300060: brush162Main36
+    3300062: brush162Main37
+    3300064: brush162Main38
+    3300066: brush162Main39
+    3300068: brush162Main4
+    3300070: brush162Main40
+    3300072: brush162Main41
+    3300074: brush162Main42
+    3300076: brush162Main43
+    3300078: brush162Main44
+    3300080: brush162Main45
+    3300082: brush162Main46
+    3300084: brush162Main47
+    3300086: brush162Main48
+    3300088: brush162Main49
+    3300090: brush162Main5
+    3300092: brush162Main50
+    3300094: brush162Main51
+    3300096: brush162Main52
+    3300098: brush162Main53
+    3300100: brush162Main54
+    3300102: brush162Main55
+    3300104: brush162Main56
+    3300106: brush162Main57
+    3300108: brush162Main58
+    3300110: brush162Main59
+    3300112: brush162Main6
+    3300114: brush162Main60
+    3300116: brush162Main61
+    3300118: brush162Main62
+    3300120: brush162Main63
+    3300122: brush162Main64
+    3300124: brush162Main65
+    3300126: brush162Main66
+    3300128: brush162Main67
+    3300130: brush162Main68
+    3300132: brush162Main7
+    3300134: brush162Main8
+    3300136: brush162Main9
+    3300138: brush64Main
+    3300140: brush64Main1
+    3300142: brush64Main10
+    3300144: brush64Main11
+    3300146: brush64Main12
+    3300148: brush64Main13
+    3300150: brush64Main14
+    3300152: brush64Main15
+    3300154: brush64Main16
+    3300156: brush64Main17
+    3300158: brush64Main18
+    3300160: brush64Main19
+    3300162: brush64Main2
+    3300164: brush64Main20
+    3300166: brush64Main21
+    3300168: brush64Main22
+    3300170: brush64Main23
+    3300172: brush64Main24
+    3300174: brush64Main25
+    3300176: brush64Main26
+    3300178: brush64Main27
+    3300180: brush64Main28
+    3300182: brush64Main29
+    3300184: brush64Main3
+    3300186: brush64Main30
+    3300188: brush64Main31
+    3300190: brush64Main32
+    3300192: brush64Main33
+    3300194: brush64Main34
+    3300196: brush64Main35
+    3300198: brush64Main36
+    3300200: brush64Main37
+    3300202: brush64Main38
+    3300204: brush64Main39
+    3300206: brush64Main4
+    3300208: brush64Main40
+    3300210: brush64Main41
+    3300212: brush64Main42
+    3300214: brush64Main43
+    3300216: brush64Main44
+    3300218: brush64Main45
+    3300220: brush64Main46
+    3300222: brush64Main47
+    3300224: brush64Main48
+    3300226: brush64Main49
+    3300228: brush64Main5
+    3300230: brush64Main50
+    3300232: brush64Main51
+    3300234: brush64Main52
+    3300236: brush64Main53
+    3300238: brush64Main54
+    3300240: brush64Main55
+    3300242: brush64Main56
+    3300244: brush64Main57
+    3300246: brush64Main58
+    3300248: brush64Main59
+    3300250: brush64Main6
+    3300252: brush64Main60
+    3300254: brush64Main61
+    3300256: brush64Main62
+    3300258: brush64Main7
+    3300260: brush64Main8
+    3300262: brush64Main9
+    3300264: brush93Main
+    3300266: brush93Main1
+    3300268: brush93Main10
+    3300270: brush93Main11
+    3300272: brush93Main12
+    3300274: brush93Main13
+    3300276: brush93Main14
+    3300278: brush93Main15
+    3300280: brush93Main16
+    3300282: brush93Main17
+    3300284: brush93Main18
+    3300286: brush93Main19
+    3300288: brush93Main2
+    3300290: brush93Main20
+    3300292: brush93Main21
+    3300294: brush93Main22
+    3300296: brush93Main23
+    3300298: brush93Main24
+    3300300: brush93Main25
+    3300302: brush93Main26
+    3300304: brush93Main27
+    3300306: brush93Main28
+    3300308: brush93Main3
+    3300310: brush93Main4
+    3300312: brush93Main5
+    3300314: brush93Main6
+    3300316: brush93Main7
+    3300318: brush93Main8
+    3300320: brush93Main9
+    3300322: cactus13Main
+    3300324: cactus13Main 1
+    3300326: cactus13Main 2
+    3300328: cactus13Main 3
+    3300330: cactus13Main 4
+    3300332: cactus13Main 5
+    3300334: cactus13Main 6
+    3300336: cactus13Main 7
+    3300338: cactus13Main 8
+    3300340: cactus13Main 9
+    3300342: gold15Main
+    3300344: gold15Main1
+    3300346: gold15Main10
+    3300348: gold15Main11
+    3300350: gold15Main12
+    3300352: gold15Main13
+    3300354: gold15Main14
+    3300356: gold15Main15
+    3300358: gold15Main16
+    3300360: gold15Main17
+    3300362: gold15Main18
+    3300364: gold15Main19
+    3300366: gold15Main2
+    3300368: gold15Main20
+    3300370: gold15Main21
+    3300372: gold15Main22
+    3300374: gold15Main23
+    3300376: gold15Main24
+    3300378: gold15Main25
+    3300380: gold15Main26
+    3300382: gold15Main27
+    3300384: gold15Main28
+    3300386: gold15Main29
+    3300388: gold15Main3
+    3300390: gold15Main30
+    3300392: gold15Main31
+    3300394: gold15Main32
+    3300396: gold15Main33
+    3300398: gold15Main34
+    3300400: gold15Main35
+    3300402: gold15Main36
+    3300404: gold15Main37
+    3300406: gold15Main38
+    3300408: gold15Main39
+    3300410: gold15Main4
+    3300412: gold15Main40
+    3300414: gold15Main41
+    3300416: gold15Main42
+    3300418: gold15Main43
+    3300420: gold15Main44
+    3300422: gold15Main45
+    3300424: gold15Main46
+    3300426: gold15Main47
+    3300428: gold15Main48
+    3300430: gold15Main49
+    3300432: gold15Main5
+    3300434: gold15Main50
+    3300436: gold15Main51
+    3300438: gold15Main52
+    3300440: gold15Main53
+    3300442: gold15Main6
+    3300444: gold15Main7
+    3300446: gold15Main8
+    3300448: gold15Main9
+    3300450: pasted__pPipe1
+    3300452: pasted__pPipe1 1
+    3300454: pasted__pPipe1 2
+    3300456: pasted__pPipe1 3
+    3300458: pasted__pPipe14
+    3300460: pasted__pPipe16
+    3300462: pasted__pPipe16 1
+    3300464: pasted__pPipe16 2
+    3300466: pasted__pPipe16 3
+    3300468: pasted__pPipe17
+    3300470: pasted__pPipe17 1
+    3300472: pasted__pPipe17 2
+    3300474: pasted__pPipe17 3
+    3300476: pasted__pPipe18
+    3300478: pasted__pPipe18 1
+    3300480: pasted__pPipe18 2
+    3300482: pasted__pPipe18 3
+    3300484: pasted__pPipe19
+    3300486: pasted__pPipe19 1
+    3300488: pasted__pPipe19 2
+    3300490: pasted__pPipe19 3
+    3300492: pasted__pPipe20
+    3300494: pasted__pPipe20 1
+    3300496: pasted__pPipe20 2
+    3300498: pasted__pPipe20 3
+    3300500: pasted__pPipe21
+    3300502: pasted__pPipe21 1
+    3300504: pasted__pPipe21 2
+    3300506: pasted__pPipe21 3
+    3300508: pasted__pPipe22
+    3300510: pasted__pPipe22 1
+    3300512: pasted__pPipe22 2
+    3300514: pasted__pPipe22 3
+    3300516: pasted__pPipe23
+    3300518: pasted__pPipe23 1
+    3300520: pasted__pPipe23 2
+    3300522: pasted__pPipe23 3
+    3300524: pasted__pPipe24
+    3300526: pasted__pPipe24 1
+    3300528: pasted__pPipe24 2
+    3300530: pasted__pPipe24 3
+    3300532: pasted__pPipe25
+    3300534: pasted__pPipe25 1
+    3300536: pasted__pPipe25 2
+    3300538: pasted__pPipe25 3
+    3300540: pasted__pPipe26
+    3300542: pasted__pPipe26 1
+    3300544: pasted__pPipe26 2
+    3300546: pasted__pPipe26 3
+    3300548: pasted__pPipe27
+    3300550: pasted__pPipe27 1
+    3300552: pasted__pPipe27 2
+    3300554: pasted__pPipe27 3
+    3300556: pasted__pPipe28
+    3300558: pasted__pPipe28 1
+    3300560: pasted__pPipe28 2
+    3300562: pasted__pPipe28 3
+    3300564: pasted__pPipe29
+    3300566: pasted__pPipe29 1
+    3300568: pasted__pPipe29 2
+    3300570: pasted__pPipe29 3
+    3300572: pasted__pPipe30
+    3300574: pasted__pPipe30 1
+    3300576: pasted__pPipe30 2
+    3300578: pasted__pPipe30 3
+    3300580: pasted__pPipe31
+    3300582: pasted__pPipe31 1
+    3300584: pasted__pPipe31 2
+    3300586: pasted__pPipe31 3
+    3300588: pasted__pPipe32
+    3300590: pasted__pPipe32 1
+    3300592: pasted__pPipe32 2
+    3300594: pasted__pPipe32 3
+    3300596: pasted__pPipe33
+    3300598: pasted__pPipe33 1
+    3300600: pasted__pPipe33 2
+    3300602: pasted__pPipe33 3
+    3300604: pasted__pPipe34
+    3300606: pasted__pPipe34 1
+    3300608: pasted__pPipe34 2
+    3300610: pasted__pPipe34 3
+    3300612: pCube139
+    3300614: pCube140
+    3300616: pCube141
+    3300618: pCube152
+    3300620: pCube153
+    3300622: pCube154
+    3300624: pCylinder1
+    3300626: polySurface2
+    3300628: pPipe10
+    3300630: pPipe12
+    3300632: pPipe13
+    3300634: pPipe2
+    3300636: pPipe3
+    3300638: pPipe4
+    3300640: pPipe5
+    3300642: pPipe6
+    3300644: pPipe7
+    3300646: pPipe8
+    3300648: pPipe9
+    3300650: pTorus1
+    3300652: pTorus10
+    3300654: pTorus11
+    3300656: pTorus12
+    3300658: pTorus13
+    3300660: pTorus14
+    3300662: pTorus2
+    3300664: pTorus3
+    3300666: pTorus4
+    3300668: pTorus5
+    3300670: pTorus6
+    3300672: pTorus7
+    3300674: pTorus8
+    3300676: pTorus9
+    3300678: sky_dome
+    4300000: pPipe2
+    4300002: pPipe3
+    4300004: pPipe4
+    4300006: pPipe5
+    4300008: pPipe6
+    4300010: pPipe7
+    4300012: pPipe8
+    4300014: pPipe9
+    4300016: pPipe10
+    4300018: polySurface2
+    4300020: pTorus1
+    4300022: pTorus2
+    4300024: pTorus3
+    4300026: pTorus4
+    4300028: pTorus5
+    4300030: pTorus6
+    4300032: pTorus7
+    4300034: pTorus8
+    4300036: pTorus9
+    4300038: pTorus10
+    4300040: pTorus11
+    4300042: pTorus12
+    4300044: pTorus13
+    4300046: pTorus14
+    4300048: pPipe12
+    4300050: pPipe13
+    4300052: pasted__pPipe1
+    4300054: pasted__pPipe14
+    4300056: pasted__pPipe16
+    4300058: pasted__pPipe17
+    4300060: pasted__pPipe18
+    4300062: pasted__pPipe19
+    4300064: pasted__pPipe20
+    4300066: pasted__pPipe21
+    4300068: pasted__pPipe22
+    4300070: pasted__pPipe23
+    4300072: pasted__pPipe24
+    4300074: pasted__pPipe25
+    4300076: pasted__pPipe26
+    4300078: pasted__pPipe27
+    4300080: pasted__pPipe28
+    4300082: pasted__pPipe29
+    4300084: pasted__pPipe30
+    4300086: pasted__pPipe31
+    4300088: pasted__pPipe32
+    4300090: pasted__pPipe33
+    4300092: pasted__pPipe34
+    4300094: pasted__pPipe1
+    4300096: pasted__pPipe16
+    4300098: pasted__pPipe17
+    4300100: pasted__pPipe18
+    4300102: pasted__pPipe19
+    4300104: pasted__pPipe20
+    4300106: pasted__pPipe21
+    4300108: pasted__pPipe22
+    4300110: pasted__pPipe23
+    4300112: pasted__pPipe24
+    4300114: pasted__pPipe25
+    4300116: pasted__pPipe26
+    4300118: pasted__pPipe27
+    4300120: pasted__pPipe28
+    4300122: pasted__pPipe29
+    4300124: pasted__pPipe30
+    4300126: pasted__pPipe31
+    4300128: pasted__pPipe32
+    4300130: pasted__pPipe33
+    4300132: pasted__pPipe34
+    4300134: pasted__pPipe1
+    4300136: pasted__pPipe16
+    4300138: pasted__pPipe17
+    4300140: pasted__pPipe18
+    4300142: pasted__pPipe19
+    4300144: pasted__pPipe20
+    4300146: pasted__pPipe21
+    4300148: pasted__pPipe22
+    4300150: pasted__pPipe23
+    4300152: pasted__pPipe24
+    4300154: pasted__pPipe25
+    4300156: pasted__pPipe26
+    4300158: pasted__pPipe27
+    4300160: pasted__pPipe28
+    4300162: pasted__pPipe29
+    4300164: pasted__pPipe30
+    4300166: pasted__pPipe31
+    4300168: pasted__pPipe32
+    4300170: pasted__pPipe33
+    4300172: pasted__pPipe34
+    4300174: sky_dome
+    4300176: pCube139
+    4300178: pCube140
+    4300180: pCube141
+    4300182: pCube152
+    4300184: pCube153
+    4300186: pCube154
+    4300188: brush162Main
+    4300190: brush162Main1
+    4300192: brush162Main2
+    4300194: brush162Main3
+    4300196: brush162Main4
+    4300198: brush162Main5
+    4300200: brush162Main6
+    4300202: brush162Main7
+    4300204: brush162Main8
+    4300206: brush162Main9
+    4300208: brush162Main10
+    4300210: brush162Main11
+    4300212: brush162Main12
+    4300214: brush162Main13
+    4300216: brush162Main14
+    4300218: brush162Main15
+    4300220: brush162Main16
+    4300222: brush162Main17
+    4300224: brush162Main18
+    4300226: brush162Main19
+    4300228: brush162Main20
+    4300230: brush162Main21
+    4300232: brush162Main22
+    4300234: brush162Main23
+    4300236: brush162Main24
+    4300238: brush162Main25
+    4300240: brush162Main26
+    4300242: brush162Main27
+    4300244: brush162Main28
+    4300246: brush162Main29
+    4300248: brush162Main30
+    4300250: brush162Main31
+    4300252: brush162Main32
+    4300254: brush162Main33
+    4300256: brush162Main34
+    4300258: brush162Main35
+    4300260: brush162Main36
+    4300262: brush162Main37
+    4300264: brush162Main38
+    4300266: brush162Main39
+    4300268: brush162Main40
+    4300270: brush162Main41
+    4300272: brush162Main42
+    4300274: brush162Main43
+    4300276: brush162Main44
+    4300278: brush162Main45
+    4300280: brush162Main46
+    4300282: brush162Main47
+    4300284: brush162Main48
+    4300286: brush162Main49
+    4300288: brush162Main50
+    4300290: brush162Main51
+    4300292: brush162Main52
+    4300294: brush162Main53
+    4300296: brush162Main54
+    4300298: brush162Main55
+    4300300: brush162Main56
+    4300302: brush162Main57
+    4300304: brush162Main58
+    4300306: brush162Main59
+    4300308: brush162Main60
+    4300310: brush162Main61
+    4300312: brush162Main62
+    4300314: brush162Main63
+    4300316: brush162Main64
+    4300318: brush162Main65
+    4300320: brush162Main66
+    4300322: brush162Main67
+    4300324: brush162Main68
+    4300326: brush93Main
+    4300328: brush93Main1
+    4300330: brush93Main2
+    4300332: brush93Main3
+    4300334: brush93Main4
+    4300336: brush93Main5
+    4300338: brush93Main6
+    4300340: brush93Main7
+    4300342: brush93Main8
+    4300344: brush93Main9
+    4300346: brush93Main10
+    4300348: brush93Main11
+    4300350: brush93Main12
+    4300352: brush93Main13
+    4300354: brush93Main14
+    4300356: brush93Main15
+    4300358: brush93Main16
+    4300360: brush93Main17
+    4300362: brush93Main18
+    4300364: brush93Main19
+    4300366: brush93Main20
+    4300368: brush93Main21
+    4300370: brush93Main22
+    4300372: brush93Main23
+    4300374: brush93Main24
+    4300376: brush93Main25
+    4300378: brush93Main26
+    4300380: brush93Main27
+    4300382: brush93Main28
+    4300384: brush64Main
+    4300386: brush64Main1
+    4300388: brush64Main2
+    4300390: brush64Main3
+    4300392: brush64Main4
+    4300394: brush64Main5
+    4300396: brush64Main6
+    4300398: brush64Main7
+    4300400: brush64Main8
+    4300402: brush64Main9
+    4300404: brush64Main10
+    4300406: brush64Main11
+    4300408: brush64Main12
+    4300410: brush64Main13
+    4300412: brush64Main14
+    4300414: brush64Main15
+    4300416: brush64Main16
+    4300418: brush64Main17
+    4300420: brush64Main18
+    4300422: brush64Main19
+    4300424: brush64Main20
+    4300426: brush64Main21
+    4300428: brush64Main22
+    4300430: brush64Main23
+    4300432: brush64Main24
+    4300434: brush64Main25
+    4300436: brush64Main26
+    4300438: brush64Main27
+    4300440: brush64Main28
+    4300442: brush64Main29
+    4300444: brush64Main30
+    4300446: brush64Main31
+    4300448: brush64Main32
+    4300450: brush64Main33
+    4300452: brush64Main34
+    4300454: brush64Main35
+    4300456: brush64Main36
+    4300458: brush64Main37
+    4300460: brush64Main38
+    4300462: brush64Main39
+    4300464: brush64Main40
+    4300466: brush64Main41
+    4300468: brush64Main42
+    4300470: brush64Main43
+    4300472: brush64Main44
+    4300474: brush64Main45
+    4300476: brush64Main46
+    4300478: brush64Main47
+    4300480: brush64Main48
+    4300482: brush64Main49
+    4300484: brush64Main50
+    4300486: brush64Main51
+    4300488: brush64Main52
+    4300490: brush64Main53
+    4300492: brush64Main54
+    4300494: brush64Main55
+    4300496: brush64Main56
+    4300498: brush64Main57
+    4300500: brush64Main58
+    4300502: brush64Main59
+    4300504: brush64Main60
+    4300506: brush64Main61
+    4300508: brush64Main62
+    4300510: gold15Main
+    4300512: gold15Main1
+    4300514: gold15Main2
+    4300516: gold15Main3
+    4300518: gold15Main4
+    4300520: gold15Main5
+    4300522: gold15Main6
+    4300524: gold15Main7
+    4300526: gold15Main8
+    4300528: gold15Main9
+    4300530: gold15Main10
+    4300532: gold15Main11
+    4300534: gold15Main12
+    4300536: gold15Main13
+    4300538: gold15Main14
+    4300540: gold15Main15
+    4300542: gold15Main16
+    4300544: gold15Main17
+    4300546: gold15Main18
+    4300548: gold15Main19
+    4300550: gold15Main20
+    4300552: gold15Main21
+    4300554: gold15Main22
+    4300556: gold15Main23
+    4300558: gold15Main24
+    4300560: gold15Main25
+    4300562: gold15Main26
+    4300564: gold15Main27
+    4300566: gold15Main28
+    4300568: gold15Main29
+    4300570: gold15Main30
+    4300572: gold15Main31
+    4300574: gold15Main32
+    4300576: gold15Main33
+    4300578: gold15Main34
+    4300580: gold15Main35
+    4300582: gold15Main36
+    4300584: gold15Main37
+    4300586: gold15Main38
+    4300588: gold15Main39
+    4300590: gold15Main40
+    4300592: gold15Main41
+    4300594: gold15Main42
+    4300596: gold15Main43
+    4300598: gold15Main44
+    4300600: gold15Main45
+    4300602: gold15Main46
+    4300604: gold15Main47
+    4300606: gold15Main48
+    4300608: gold15Main49
+    4300610: gold15Main50
+    4300612: gold15Main51
+    4300614: gold15Main52
+    4300616: gold15Main53
+    4300618: cactus13Main
+    4300620: cactus13Main
+    4300622: cactus13Main
+    4300624: cactus13Main
+    4300626: cactus13Main
+    4300628: cactus13Main
+    4300630: cactus13Main
+    4300632: cactus13Main
+    4300634: cactus13Main
+    4300636: cactus13Main
+    4300638: pasted__pPipe1
+    4300640: pasted__pPipe16
+    4300642: pasted__pPipe17
+    4300644: pasted__pPipe18
+    4300646: pasted__pPipe19
+    4300648: pasted__pPipe20
+    4300650: pasted__pPipe21
+    4300652: pasted__pPipe22
+    4300654: pasted__pPipe23
+    4300656: pasted__pPipe24
+    4300658: pasted__pPipe25
+    4300660: pasted__pPipe26
+    4300662: pasted__pPipe27
+    4300664: pasted__pPipe28
+    4300666: pasted__pPipe29
+    4300668: pasted__pPipe30
+    4300670: pasted__pPipe31
+    4300672: pasted__pPipe32
+    4300674: pasted__pPipe33
+    4300676: pasted__pPipe34
+    4300678: pCylinder1
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

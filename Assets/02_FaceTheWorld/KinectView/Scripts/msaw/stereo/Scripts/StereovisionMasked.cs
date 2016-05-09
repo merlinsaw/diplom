@@ -18,6 +18,7 @@ class S3DVM : System.Object
 public class StereovisionMasked : NetworkBehaviour {
 	//public Material anaglyphMat; 
 	public Material anaglyphMatMasked;
+
 	
 	public bool enableKeys             	= true; 
 	
@@ -158,7 +159,6 @@ public class StereovisionMasked : NetworkBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		
 		
 	}
 	//public void OnPostRender() {

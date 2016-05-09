@@ -29,7 +29,7 @@ public class CubemanController2 : MonoBehaviour
 
 	//TODO: @merlin: Cubeman, set movement speed multiplier to increase the movement speed
 	[Tooltip("Rate Multiplier at which the cubeman will move through the scene.")]
-	private Vector3 increasedMovement = new Vector3(2f,1f,4f);
+	public Vector3 increasedMovement = new Vector3(2f,1f,5f);
 
 	//TODO: @merlin: Cubeman, set scale multiplier to increase size
 	[Tooltip("scale the cubeman to fit the shadow sillouet.")]

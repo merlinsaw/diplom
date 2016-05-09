@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.Networking;
 
-public class MoveWithHead : NetworkBehaviour {
+public class MoveWithHead : MonoBehaviour {
 	public bool headmovement = false;
 	public Vector3 offset;
 	public GameObject Head;
@@ -17,9 +17,8 @@ public class MoveWithHead : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-			if (GetComponent<NetworkIdentity>().isServer)
-			{
-				if (isServer == true){
+
+				
 				HeadPosition = Head.transform.localPosition;//position;
 						
 
@@ -30,8 +29,5 @@ public class MoveWithHead : NetworkBehaviour {
 					this.transform.localPosition = new Vector3((HeadPosition.x+offset.x)*CamMovementXfactor,offset.y,(HeadPosition.z-offset.z));
 					}
 				}
-			if (isServer == false){
-			}
-		}
-	}
+			
 }
