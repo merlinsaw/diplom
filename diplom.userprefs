@@ -1,11 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\06_Cycle\ColliderTrigger3.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\anaglyphMatAndMasking.shader">
     <Files>
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Scripts\Stereovision.cs" Line="20" Column="28" />
       <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Scripts\StereovisionMasked.cs" Line="1" Column="1" />
       <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Scripts\QuadMapping.cs" Line="1" Column="1" />
       <File FileName="Assets\06_Cycle\PlayerCameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\06_Cycle\ColliderTrigger3.cs" Line="28" Column="3" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\anaglyphMatAndMasking.shader" Line="2" Column="2" />
+      <File FileName="Assets\02_FaceTheWorld\KinectView\Scripts\msaw\stereo\Shader\anaglyphMat.shader" Line="11" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -17,6 +17,7 @@ public class OffsetCameraMatrix : MonoBehaviour {
 	public float right = 0.2F; 		//0.425F
 	public float top = 0.2F;   		//0.4F
 	public float bottom = -0.2F; 	//-0.2F
+	[Tooltip("this value is used for the camera matrix instead of the natural clipping Camera plane")]
 	public float nearPlane = 3.0F;
 	void remote()
 	{
